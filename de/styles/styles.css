@@ -375,13 +375,6 @@ nav input[type="checkbox"]{
     margin-top:-90px;
 }
 
-#backgroundimage-kontakt{
-    background-image:url('/images/image-teaser-kontakt.jpg');
-    background-position:left;
-    background-repeat:no-repeat;
-    margin-bottom:0!important;
-}
-
 #backgroundimage-kontakt img{
     margin-left:20%;
     margin-top:2%;
@@ -404,18 +397,25 @@ nav input[type="checkbox"]{
     padding-bottom:5%;
 }
 
+#backgroundimage-kontakt{
+    background-image:url('/images/image-teaser-kontakt.jpg');
+    background-position:left;
+    background-repeat:no-repeat;
+    margin-bottom:0!important;
+}
+
 #backgroundimage-seo{
     background-image:url('/images/image-teaser-seo.jpg');
     background-position:center;
 }
 
 #backgroundimage-sp500{
-    background:url("file:///C:/Users/annam/Documents/01-WORK/kw3/website/de/images/image-teaser-sp500.jpg"); 
+    background-image:url('/images/image-teaser-sp500.jpg'); 
     
 }
 
 #backgroundimage-copytrading{
-    background:url("file:///C:/Users/annam/Documents/01-WORK/kw3/website/de/images/image-teaser-copytrading.jpg");
+    background-image:url('/images/image-teaser-copytrading.jpg');
     background-position:right;  
     color:#171614;
 }
@@ -423,12 +423,12 @@ nav input[type="checkbox"]{
 
 
 #backgroundimage-webdesign{
-    background-image:url("file:///C:/Users/annam/Documents/01-WORK/kw3/website/de/images/image-teaser-webdesign.jpg");
+    background-image:url('/images/image-teaser-webdesign.jpg');
     background-position:center;
 }
 
 #backgroundimage-wir{
-    background-image:url("file:///C:/Users/annam/Documents/01-WORK/kw3/website/de/images/image-teaser-wer-wir-sind.jpg");
+    background-image:url('/images/image-teaser-wer-wir-sind.jpg');
     background-position:center;
     margin-bottom:90px;
 }
