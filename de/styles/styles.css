@@ -766,6 +766,10 @@ blockquote:after, .sp500:after, copytrading:after, webdesign:after{
 
 /* Tabelle * * * * * * * * */
 
+.responsive-table{
+    overflow-x:auto;
+}
+
 table, thead, th, tr, tbody{
  border-collapse:collapse;
  } 
@@ -779,13 +783,13 @@ thead, tbody{
 }
 
 th{
-    padding: 20px 0;
+    padding: 20px;
     border-bottom:2px solid #ff6b35;
 }
 
 td{
     border-bottom:1px solid #DCDCDC;
-    padding:25px 0;
+    padding:25px 10px;
 
 }
 
