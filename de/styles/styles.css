@@ -46,8 +46,7 @@ body{
 header{
     padding:10px 3%;
     background:#fff;
-    margin-bottom:0;
-    
+    margin-bottom:0; 
 }
 
 section{
@@ -1085,6 +1084,7 @@ h4{
 
     /* navigation, logo, header */
 
+    
     .colored-background h1, #backgroundimage-kontakt, #backgroundimage-sp500, #backgroundimage-copytrading, #backgroundimage-webdesign, #backgroundimage-seo, #backgroundimage-wir{
         margin-top:90px;
         padding:60px 0;
@@ -1138,6 +1138,10 @@ h4{
 
     nav ul a{
         padding:30px 0;
+    }
+
+    nav li, .expandable-li{
+        margin-left:0;
     }
 
     .expandable-li{
@@ -1292,6 +1296,13 @@ h4{
         display:none;
     }
 
+    
+    .grey-background-mobile li{
+        text-align:center;
+        margin-left:0;
+    }
+    
+
     section{
         margin:0;
     }
@@ -1299,7 +1310,7 @@ h4{
     section.without-padding{
         padding:0;
     }
-    
+
     /* unterseite rechtliches * * * * * * */
 
     .wrapper-content-rights{
@@ -1320,18 +1331,23 @@ h4{
         padding:0;
     }
 
+    #karte-sp500 .column, #karte-seo .column, #karte-copytrading .column{
+    
+        background:#fff;
+        border:20px solid #5995ED; 
+         
+    }
+
+    #karte-sp500 .row, #karte-seo .row, #karte-copytrading .row, #karte-webdesign .row{
+        padding:0;
+    }
+
     .image-bottom{
         display:none;
     }
 
     .image-top{
         display:block;
-    }
-
-   
-
-    .half li{
-        text-align:center;
     }
 
     /* quotation * * * * * * */
