@@ -39,21 +39,36 @@
 
         <!-- Kopfleiste -->
         <header>
-            <a href="index.html" id="logo"><img src="images/logo-test.svg" width="50" height="63"
-                    alt="Logo kw³ solutions"></a>
 
-            <ul id="navigation">
-                <li><a href="seo.html">SEO</a></li>
-                <li><a href="webdesign.html">Webdesign</a></li>
-                <li><a href="geld.html">Geldanlage</a>
-                    <ul>
-                        <li><a href="s&p500-strategie.html">S&P 500</a></li>
-                        <li><a href="copytrading">Copytrading</a></li>
-                    </ul>
-                </li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="ueber-uns.html">Wer wir sind</a></li>
-            </ul>
+            <nav>
+                <a href="index.html" class="logo"><img src="images/logo-test.png" width="100" height=""
+                        alt="Logo kw³ solutions"></a>
+                <input type="checkbox" id="toggle-button">
+                <label for="toggle-button" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+
+                <ul>
+                    <li><a href="seo.html">SEO</a></li>
+                    <li><a href="webdesign.html">Webdesign</a></li>
+                    <li class="expandable-li">
+                        <input type="checkbox" id="geldanlage-checkbox">
+                        <label for="geldanlage-checkbox">Geldanlage</label>
+
+                        <ul class="dropdown">
+                            <li><a href="s&p500-strategie.html">S&P 500</a></li>
+                            <li><a href="copytrading.html">Copytrading</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="wer-wir-sind.html">Wer wir sind</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+
+            </nav>
+
         </header>
 
         <!-- Teaser -->
@@ -70,7 +85,7 @@
         <div class="wrapper-content-rights">
 
             <setion>
-                <h2>...</h2>
+                <h2>Datenschutzerklärung</h2>
                 <p>Eine Nutzung der Internetseiten der KW³ Business Ltd ist grundsätzlich ohne jede Angabe
                     personenbezogener Daten möglich.
                     Sofern eine betroffene Person besondere Services unseres Unternehmens über unsere Internetseite in
@@ -140,7 +155,7 @@
                     ihre künftige Verarbeitung
                     einzuschränken.</p>
 
-                <h4>Profiling???</h4>
+                <h4>Profiling</h4>
                 <p>Profiling ist jede Art der automatisierten Verarbeitung personenbezogener Daten, die darin besteht,
                     dass diese personenbezogenen
                     Daten verwendet werden, um bestimmte persönliche Aspekte, die sich auf eine natürliche Person
@@ -253,7 +268,7 @@
                     möglich. Deaktiviert die betroffene Person die Setzung von Cookies in dem genutzten Internetbrowser,
                     sind unter Umständen nicht alle
                     Funktionen unserer Internetseite vollumfänglich nutzbar.</p>
-                <h3>4.Erfassung von allgemeinen Daten und Information</h3>
+                <h3>4. Erfassung von allgemeinen Daten und Information</h3>
                 <p>Die Internetseite der KW³ Business Ltd erfasst mit jedem Aufruf der Internetseite durch eine
                     betroffene Person oder ein automatisiertes
                     System eine Reihe von allgemeinen Daten und Informationen. Diese allgemeinen Daten und Informationen
@@ -374,7 +389,7 @@
                     Verantwortlichen vom Newsletterversand abzumelden oder dies dem für die Verarbeitung
                     Verantwortlichen auf andere Weise
                     mitzuteilen.</p>
-                <h3>7. Newsletter Tracking??</h3>
+                <h3>7. Newsletter Tracking</h3>
                 <p>Die Newsletter der KW³ Business Ltd enthalten sogenannte Zählpixel. Ein Zählpixel ist eine
                     Miniaturgrafik, die in solche
                     E-Mails eingebettet wird, welche im HTML-Format versendet werden, um eine Logdatei-Aufzeichnung und
@@ -398,7 +413,7 @@
                     Verantwortlichen gelöscht. Eine Abmeldung vom Erhalt des Newsletters deutet die KW³ Business Ltd
                     automatisch als
                     Widerruf.</p>
-                <h3>Kontaktmöglichkeiten über die Internetseite</h3>
+                <h3>8. Kontaktmöglichkeiten über die Internetseite</h3>
                 <p>Die Internetseite der KW³ Business Ltd enthält aufgrund von gesetzlichen Vorschriften Angaben, die
                     eine schnelle
                     elektronische Kontaktaufnahme zu unserem Unternehmen sowie eine unmittelbare Kommunikation mit uns
@@ -413,7 +428,7 @@
                     Bearbeitung oder der Kontaktaufnahme
                     zur betroffenen Person gespeichert. Es erfolgt keine Weitergabe dieser personenbezogenen Daten an
                     Dritte.</p>
-                <h3>8. Routinemäßige Löschung und Sperrung von personenbezogenen Daten</h3>
+                <h3>9. Routinemäßige Löschung und Sperrung von personenbezogenen Daten</h3>
                 <p>Der für die Verarbeitung Verantwortliche verarbeitet und speichert personenbezogene Daten der
                     betroffenen Person nur für den
                     Zeitraum, der zur Erreichung des Speicherungszwecks erforderlich ist oder sofern dies durch den
@@ -426,7 +441,7 @@
                     zuständigen Gesetzgeber vorgeschriebene Speicherfrist ab, werden die personenbezogenen Daten
                     routinemäßig und entsprechend
                     den gesetzlichen Vorschriften gesperrt oder gelöscht.</p>
-                <h3>9. Rechte der betroffenen Person</h3>
+                <h3>10. Rechte der betroffenen Person</h3>
                 <h4>Recht auf Bestätigung</h4>
                 <p>Jede betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber eingeräumte Recht,
                     von dem für die Verarbeitung
@@ -672,7 +687,7 @@
                     hierzu
                     jederzeit an einen Mitarbeiter des für die Verarbeitung Verantwortlichen wenden.</p>
 
-                <h3>10. Datenschutzbestimmungen zu Einsatz und Verwendung von affilinet????</h3>
+                <h3>11. Datenschutzbestimmungen zu Einsatz und Verwendung von affilinet</h3>
                 <p>Der für die Verarbeitung Verantwortliche hat auf dieser Internetseite Komponenten des Unternehmens
                     affilinet integriert.
                     Affilinet ist ein deutsches Affiliate-Netzwerk, welches Affiliate-Marketing anbietet.</p>
@@ -709,8 +724,8 @@
                     auf dem informationstechnologischen System der betroffenen Person setzt. Zudem können von Affilinet
                     bereits gesetzte Cookies
                     jederzeit über einen Internetbrowser oder andere Softwareprogramme gelöscht werden.</p>
-                <p>Die geltenden Datenschutzbestimmungen von Affilinet können unter
-                    https://www.affili.net/de/footeritem/datenschutz abgerufen werden.</p>
+                <p>Die geltenden Datenschutzbestimmungen von Affilinet können unter <a href class="link">
+                        https://www.affili.net/de/footeritem/datenschutz</a> abgerufen werden.</p>
 
                 <h3>12. Datenschutzbestimmungen zu Einsatz und Verwendung von Facebook</h3>
                 <p>Der für die Verarbeitung Verantwortliche hat auf dieser Internetseite Komponenten des Unternehmens
@@ -739,7 +754,8 @@
                     Facebook-Komponente veranlasst,
                     eine Darstellung der entsprechenden Facebook-Komponente von Facebook herunterzuladen. Eine
                     Gesamtübersicht über alle
-                    Facebook-Plug-Ins kann unter https://developers.facebook.com/docs/plugins/?locale=de_DE abgerufen
+                    Facebook-Plug-Ins kann unter <a href
+                        class="link">https://developers.facebook.com/docs/plugins/?locale=de_DE</a> abgerufen
                     werden. Im Rahmen
                     dieses technischen Verfahrens erhält Facebook Kenntnis darüber, welche konkrete Unterseite unserer
                     Internetseite durch
@@ -767,7 +783,8 @@
                     die Übermittlung dadurch
                     verhindern, dass sie sich vor einem Aufruf unserer Internetseite aus ihrem Facebook-Account
                     ausloggt.</p>
-                <p>Die von Facebook veröffentlichte Datenrichtlinie, die unter https://de-de.facebook.com/about/privacy/
+                <p>Die von Facebook veröffentlichte Datenrichtlinie, die unter <a href
+                        class="link">https://de-de.facebook.com/about/privacy/</a>
                     abrufbar ist, gibt Aufschluss
                     über die Erhebung, Verarbeitung und Nutzung personenbezogener Daten durch Facebook. Ferner wird dort
                     erläutert, welche
@@ -846,8 +863,8 @@
                     erzeugten, auf eine Nutzung dieser
                     Internetseite bezogenen Daten sowie der Verarbeitung dieser Daten durch Google zu widersprechen und
                     eine solche zu verhindern. Hierzu
-                    muss die betroffene Person ein Browser-Add-On unter dem Link <a
-                        href>https://tools.google.com/dlpage/gaoptout</a> herunterladen und installieren.
+                    muss die betroffene Person ein Browser-Add-On unter dem Link <a href
+                        class="link">https://tools.google.com/dlpage/gaoptout</a> herunterladen und installieren.
                     Dieses Browser-Add-On teilt Google Analytics über JavaScript mit, dass keine Daten und Informationen
                     zu den Besuchen von Internetseiten
                     an Google Analytics übermittelt werden dürfen. Die Installation des Browser-Add-Ons wird von Google
@@ -860,11 +877,12 @@
                     zuzurechnen ist, deinstalliert oder
                     deaktiviert wird, besteht die Möglichkeit der Neuinstallation oder der erneuten Aktivierung des
                     Browser-Add-Ons.</p>
-                <p>Weitere Informationen und die geltenden Datenschutzbestimmungen von Google können unter <a
-                        href>https://www.google.de/intl/de/policies/privacy/</a>
-                    und unter <a href>http://www.google.com/analytics/terms/de.html</a> abgerufen werden. Google
+                <p>Weitere Informationen und die geltenden Datenschutzbestimmungen von Google können unter <a href
+                        class="link">https://www.google.de/intl/de/policies/privacy/</a>
+                    und unter <a href class="link">http://www.google.com/analytics/terms/de.html</a> abgerufen werden.
+                    Google
                     Analytics wird unter diesem Link
-                    <a href>https://www.google.com/intl/de_de/analytics/</a> genauer erläutert.
+                    <a href class="link">https://www.google.com/intl/de_de/analytics/</a> genauer erläutert.
                 </p>
 
                 <h3>14. Datenschutzbestimmungen zu Einsatz und Verwendung von Google+</h3>
@@ -891,7 +909,7 @@
                     Google Kenntnis darüber, welche
                     konkrete Unterseite unserer Internetseite durch die betroffene Person besucht wird. Genauere
                     Informationen zu Google+ sind
-                    unter <a href>https://developers.google.com/+/</a> abrufbar.</p>
+                    unter <a href class="link">https://developers.google.com/+/</a> abrufbar.</p>
                 <p>Sofern die betroffene Person gleichzeitig bei Google+ eingeloggt ist, erkennt Google mit jedem Aufruf
                     unserer Internetseite durch die
                     betroffene Person und während der gesamten Dauer des jeweiligen Aufenthaltes auf unserer
@@ -928,10 +946,10 @@
                     kann diese eine solche Übermittlung
                     dadurch verhindern, dass sie sich vor einem Aufruf unserer Internetseite aus ihrem Google+-Account
                     ausloggt.</p>
-                <p>Weitere Informationen und die geltenden Datenschutzbestimmungen von Google können unter <a
-                        href>https://www.google.de/intl/de/policies/privacy/</a>
-                    abgerufen werden. Weitere Hinweise von Google zur Google+1-Schaltfläche können unter <a
-                        href>https://developers.google.com/+/web/buttons-policy</a>
+                <p>Weitere Informationen und die geltenden Datenschutzbestimmungen von Google können unter <a href
+                        class="link">https://www.google.de/intl/de/policies/privacy/</a>
+                    abgerufen werden. Weitere Hinweise von Google zur Google+1-Schaltfläche können unter <a href
+                        class="link">https://developers.google.com/+/web/buttons-policy</a>
                     abgerufen werden.</p>
 
                 <h3>15. Datenschutzbestimmungen zu Einsatz und Verwendung von Google-AdWords</h3>
@@ -996,10 +1014,10 @@
                 <p>Ferner besteht für die betroffene Person die Möglichkeit, der interessenbezogenen Werbung durch
                     Google zu widersprechen.
                     Hierzu muss die betroffene Person von jedem der von ihr genutzten Internetbrowser aus den Link <a
-                        href>www.google.de/settings/ads</a>
+                        href class="link">www.google.de/settings/ads</a>
                     aufrufen und dort die gewünschten Einstellungen vornehmen.</p>
                 <p>Weitere Informationen und die geltenden Datenschutzbestimmungen von Google können
-                    unter <a href>https://www.google.de/intl/de/policies/privacy/</a> abgerufen werden.</p>
+                    unter <a href class="link">https://www.google.de/intl/de/policies/privacy/</a> abgerufen werden.</p>
 
                 <h3>16. Datenschutzbestimmungen zu Einsatz und Verwendung von Instagram</h3>
                 <p>Der für die Verarbeitung Verantwortliche hat auf dieser Internetseite Komponenten des Dienstes
@@ -1038,9 +1056,9 @@
                     dieser Informationen an Instagram von der betroffenen Person nicht gewollt, kann diese die
                     Übermittlung dadurch verhindern, dass sie sich
                     vor einem Aufruf unserer Internetseite aus ihrem Instagram-Account ausloggt.</p>
-                <p>Weitere Informationen und die geltenden Datenschutzbestimmungen von Instagram können unter <a
-                        href>https://help.instagram.com/155833707900388</a>
-                    und <a href>https://www.instagram.com/about/legal/privacy/</a> abgerufen werden.</p>
+                <p>Weitere Informationen und die geltenden Datenschutzbestimmungen von Instagram können unter <a href
+                        class="link">https://help.instagram.com/155833707900388</a>
+                    und <a href class="link">https://www.instagram.com/about/legal/privacy/</a> abgerufen werden.</p>
 
                 <h3>17. Datenschutzbestimmungen zu Einsatz und Verwendung von Twitter</h3>
                 <p>Der für die Verarbeitung Verantwortliche hat auf dieser Internetseite Komponenten von Twitter
@@ -1063,7 +1081,8 @@
                     System der betroffenen Person automatisch durch die jeweilige Twitter-Komponente veranlasst, eine
                     Darstellung der entsprechenden
                     Twitter-Komponente von Twitter herunterzuladen. Weitere Informationen zu den Twitter-Buttons sind
-                    unter <a href>https://about.twitter.com/de/resources/buttons</a> abrufbar. Im Rahmen dieses
+                    unter <a href class="link">https://about.twitter.com/de/resources/buttons</a> abrufbar. Im Rahmen
+                    dieses
                     technischen Verfahrens erhält Twitter Kenntnis darüber,
                     welche konkrete Unterseite unserer Internetseite durch die betroffene Person besucht wird. Zweck der
                     Integration der Twitter-Komponente
@@ -1090,8 +1109,8 @@
                     Twitter von der betroffenen Person nicht gewollt, kann diese die Übermittlung dadurch verhindern,
                     dass sie sich vor einem Aufruf unserer
                     Internetseite aus ihrem Twitter-Account ausloggt.</p>
-                <p>Die geltenden Datenschutzbestimmungen von Twitter sind unter <a
-                        href>https://twitter.com/privacy?lang=de</a> abrufbar.</p>
+                <p>Die geltenden Datenschutzbestimmungen von Twitter sind unter <a href
+                        class="link">https://twitter.com/privacy?lang=de</a> abrufbar.</p>
 
                 <h3>18. Datenschutzbestimmungen zu Einsatz und Verwendung von YouTube</h3>
                 <p>Der für die Verarbeitung Verantwortliche hat auf dieser Internetseite Komponenten von YouTube
@@ -1111,8 +1130,8 @@
                     informationstechnologischen System der
                     betroffenen Person automatisch durch die jeweilige YouTube-Komponente veranlasst, eine Darstellung
                     der entsprechenden YouTube-Komponente
-                    von YouTube herunterzuladen. Weitere Informationen zu YouTube können unter <a
-                        href>https://www.youtube.com/yt/about/de/</a> abgerufen werden. Im Rahmen
+                    von YouTube herunterzuladen. Weitere Informationen zu YouTube können unter <a href
+                        class="link">https://www.youtube.com/yt/about/de/</a> abgerufen werden. Im Rahmen
                     dieses technischen Verfahrens erhalten YouTube und Google Kenntnis darüber, welche konkrete
                     Unterseite unserer Internetseite durch die
                     betroffene Person besucht wird.</p>
@@ -1130,8 +1149,8 @@
                     an YouTube und Google von der betroffenen Person nicht gewollt, kann diese die Übermittlung dadurch
                     verhindern, dass sie sich vor einem Aufruf
                     unserer Internetseite aus ihrem YouTube-Account ausloggt.</p>
-                <p>Die von YouTube veröffentlichten Datenschutzbestimmungen, die unter <a
-                        href>https://www.google.de/intl/de/policies/privacy/</a> abrufbar sind, geben
+                <p>Die von YouTube veröffentlichten Datenschutzbestimmungen, die unter <a href
+                        class="link">https://www.google.de/intl/de/policies/privacy/</a> abrufbar sind, geben
                     Aufschluss über die Erhebung, Verarbeitung und Nutzung personenbezogener Daten durch YouTube und
                     Google.</p>
 
@@ -1187,7 +1206,7 @@
                     einen Internetbrowser oder andere
                     Softwareprogramme gelöscht werden.</p>
                 <p>Weitere Informationen und die geltenden Datenschutzbestimmungen von DoubleClick by Google können
-                    unter <a href>https://www.google.com/intl/de/policies/</a> abgerufen werden.</p>
+                    unter <a href class="link">https://www.google.com/intl/de/policies/</a> abgerufen werden.</p>
 
                 <h3>20. Zahlungsart: Datenschutzbestimmungen zu Klarna als Zahlungsart</h3>
                 <p>Der für die Verarbeitung Verantwortliche hat auf dieser Internetseite Komponenten von Klarna
@@ -1240,8 +1259,8 @@
                     Ein Widerruf wirkt sich nicht auf personenbezogene Daten aus, die zwingend zur (vertragsgemäßen)
                     Zahlungsabwicklung verarbeitet,
                     genutzt oder übermittelt werden müssen.</p>
-                <p>Die geltenden Datenschutzbestimmungen von Klarna können unter <a
-                        href>https://cdn.klarna.com/1.0/shared/content/policy/data/de_de/data_protection.pdf</a>
+                <p>Die geltenden Datenschutzbestimmungen von Klarna können unter <a href
+                        class="link">https://cdn.klarna.com/1.0/shared/content/policy/data/de_de/data_protection.pdf</a>
                     abgerufen werden.</p>
 
                 <h3>21. Zahlungsart: Datenschutzbestimmungen zu PayPal als Zahlungsart</h3>
@@ -1287,8 +1306,8 @@
                     Ein Widerruf wirkt sich nicht auf personenbezogene Daten aus, die zwingend zur (vertragsgemäßen)
                     Zahlungsabwicklung verarbeitet, genutzt oder
                     übermittelt werden müssen.</p>
-                <p>Die geltenden Datenschutzbestimmungen von PayPal können unter <a
-                        href>https://www.paypal.com/de/webapps/mpp/ua/privacy-full</a> abgerufen werden.</p>
+                <p>Die geltenden Datenschutzbestimmungen von PayPal können unter <a href
+                        class="link">https://www.paypal.com/de/webapps/mpp/ua/privacy-full</a> abgerufen werden.</p>
 
                 <h3>22. Zahlungsart: Datenschutzbestimmungen zu Sofortüberweisung als Zahlungsart</h3>
                 <p>Der für die Verarbeitung Verantwortliche hat auf dieser Internetseite Komponenten von
@@ -1333,8 +1352,8 @@
                     zu widerrufen. Ein Widerruf wirkt sich nicht auf personenbezogene Daten aus, die zwingend zur
                     (vertragsgemäßen) Zahlungsabwicklung
                     verarbeitet, genutzt oder übermittelt werden müssen.</p>
-                <p>Die geltenden Datenschutzbestimmungen von Sofortüberweisung können unter <a
-                        href>https://www.sofort.com/ger-DE/datenschutzerklaerung-sofort-gmbh/</a>
+                <p>Die geltenden Datenschutzbestimmungen von Sofortüberweisung können unter <a href
+                        class="link">https://www.sofort.com/ger-DE/datenschutzerklaerung-sofort-gmbh/</a>
                     abgerufen werden.</p>
 
                 <h3>23. Rechtsgrundlage der Verarbeitung</h3>
@@ -1411,13 +1430,14 @@
                     Daten bereitzustellen, und welche Folgen die Nichtbereitstellung der personenbezogenen Daten hätte.
                 </p>
 
-                <h3>27. Bestehen einer automatisierten Entscheidungsfindung????</h3>
+                <h3>27. Bestehen einer automatisierten Entscheidungsfindung</h3>
                 <p>Als verantwortungsbewusstes Unternehmen verzichten wir auf eine automatische Entscheidungsfindung
                     oder ein Profiling.
                     Diese Datenschutzerklärung wurde durch den Datenschutzerklärungs-Generator der DGD Deutsche
                     Gesellschaft für DatenschutzGmbH,
                     die als » Externer Datenschutzbeauftragter Dortmund tätig ist, in Kooperation mit dem
-                    <a href scr="https://www.wbs-law.de/it-und-internet-recht/datenschutzrecht/">» Kölner Datenschutz
+                    <a href scr="https://www.wbs-law.de/it-und-internet-recht/datenschutzrecht/" class="link">» Kölner
+                        Datenschutz
                         Anwalt
                         Christian Solmecke erstellt.</a>
                 </p>
@@ -1440,8 +1460,8 @@
                     übermittelte IP-Adresse wird nicht mit anderen
                     Daten von Google zusammengeführt. Nähere Informationen zu Nutzungsbedingungen und Datenschutz finden
                     Sie unter
-                    <a href>https://www.google.com/analytics/terms/de.html</a> bzw. unter <a
-                        href>https://policies.google.com/?hl=de.</a>
+                    <a href class="link">https://www.google.com/analytics/terms/de.html</a> bzw. unter <a href
+                        class="link">https://policies.google.com/?hl=de.</a>
                 </p>
 
         </div>
@@ -1453,7 +1473,7 @@
                 <h2>KW³ Solutions</h2>
                 <p>Dein Business. Deine Freiheit.</p>
 
-                <p><a href="datenschutz.html">Datenschutz</a> | <a
+                <p><a href="datenschutz.html" class="active">Datenschutz</a> | <a
                         href="nutzungsbedingungen.html">Nutzungsbedingungen</a> |
                     <a href="Risikohinweis">Risikohinweis</a> | <a href="impressum.html">Impressum</a>
                 </p>

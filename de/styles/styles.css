@@ -52,10 +52,12 @@ header{
 
 section{
     padding:0;
-    margin:90px 0;
+    margin: 0;
     display:block;
 }
-
+section#image-warum-philipp{
+    padding:0;
+}
 .wrapper{
     max-width:1600px;
     margin:0 auto;
@@ -72,6 +74,7 @@ section{
 max-width:800px;
 margin:0 auto;
 overflow:hidden;
+padding-bottom:60px;
 }
 
 
@@ -87,6 +90,7 @@ overflow:hidden;
     padding:50px 0;
     width:100%;
     float:left;
+    margin-top:90px;
 }
 
 #site-footer a{
@@ -115,7 +119,7 @@ overflow:hidden;
 
 
 
-/* Typografie * * * * * * * * */
+/* typografie * * * * * * * * */
 
 h1, h2, h3, h4, h5, h6{
     font-family:'Cera Pro', Arial, Helvetica, sans-serif;
@@ -155,11 +159,9 @@ h3{
     font-size:28px;
     font-size:1.75rem;
     margin-bottom:16px;
-    padding-top:30px;
 }
 
 .heading-three-center{
-    font-weight:normal;
     text-align:center;
 }
 
@@ -187,7 +189,7 @@ p{
     font-family:'Quattrocento Sans', Helvetica, Arial, sans-serif;
     font-size:1rem;
     line-height:1.75rem;
-    margin-bottom:25px;
+    margin-bottom:24px;
 }
 
 
@@ -223,35 +225,6 @@ p{
     font-family:'Cera Pro', Arial, Helvetica, sans-serif;
     text-align:center;
     }
-
-
-
-
-
-/* Subnavigation * * * * * * * */
-
-ul#subnavigation{
-    text-align:center;
-    margin:20px 0;
-    
-}
-ul#subnavigation li{
-    display:inline;
-   
-    padding:10px 20px;
-    
-}
-
-ul#subnavigation li a{
-    list-style:none;
-    text-decoration:none;
-    color:#ff6b35;
-    font-size:28px;
-    font-size:1.75rem;
-    font-family:'Cera Pro', Arial, Helvetica, sans-serif;
-}
-
-
 
 
 /* Navigation * * * * * * * */
@@ -394,7 +367,7 @@ nav input[type="checkbox"]{
 
    /* Teaser unterseiten * * * * * * * * */
 
-#backgroundimage-seo, #backgroundimage-sp500, #backgroundimage-copytrading, #backgroundimage-webdesign, #backgroundimage-wir{
+#backgroundimage-seo, #backgroundimage-sp500, #backgroundimage-copytrading, #backgroundimage-webdesign, #backgroundimage-wir, #backgroundimage-kontakt{
       
     width:100%;
     color:#fff;
@@ -403,8 +376,37 @@ nav input[type="checkbox"]{
     margin-top:-90px;
 }
 
+#backgroundimage-kontakt{
+    background:url("file:///C:/Users/annam/Documents/01-WORK/kw3/website/de/images/image-teaser-kontakt.jpg");
+    background-position:left;
+    background-repeat:no-repeat;
+    margin-bottom:0!important;
+}
+
+#backgroundimage-kontakt img{
+    margin-left:20%;
+    margin-top:2%;
+}
+
+#backgroundimage-kontakt h2{
+    padding-top:2%;
+    padding-left:10%;  
+}
+
+#backgroundimage-kontakt h1 {
+    background:#5995ED;
+    padding:10px;
+    width:29%;
+    margin-top:10%;
+    margin-left:10%;
+}
+
+#backgroundimage-kontakt .textoverimage{
+    padding-bottom:5%;
+}
+
 #backgroundimage-seo{
-    background:url("file:///C:/Users/annam/Documents/01-WORK/kw3/website/de/images/image-teaser-seo-neu.jpg");
+    background:url("file:///C:/Users/annam/Documents/01-WORK/kw3/website/de/images/image-teaser-seo.jpg");
     background-position:center;
 }
 
@@ -415,9 +417,11 @@ nav input[type="checkbox"]{
 
 #backgroundimage-copytrading{
     background:url("file:///C:/Users/annam/Documents/01-WORK/kw3/website/de/images/image-teaser-copytrading.jpg");
-    background-position:center;  
-
+    background-position:right;  
+    color:#171614;
 }
+
+
 
 #backgroundimage-webdesign{
     background-image:url("file:///C:/Users/annam/Documents/01-WORK/kw3/website/de/images/image-teaser-webdesign.jpg");
@@ -427,6 +431,7 @@ nav input[type="checkbox"]{
 #backgroundimage-wir{
     background-image:url("file:///C:/Users/annam/Documents/01-WORK/kw3/website/de/images/image-teaser-wer-wir-sind.jpg");
     background-position:center;
+    margin-bottom:90px;
 }
 
 .headingoverimage{
@@ -440,12 +445,15 @@ nav input[type="checkbox"]{
     padding-left:10%;
     padding-bottom:10%;
 }
+p.textoverimage{
+    margin-bottom:0;
+}
 
 
 
-/* Call to action * * * * * * * * */
+/* Call to action und link * * * * * * * * */
 
-.button, .button-over-image, .button-center{
+.button, .button-over-image, .button-center, .button-last{
     color:#fff;
     background:#ff6b35;
     padding:15px 20px;
@@ -462,8 +470,26 @@ nav input[type="checkbox"]{
 
 }
 
-.button:hover, .button-center:hover{
+.button-last{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 40%;
+}
+
+.button:hover, .button-center:hover, .button-last:hover{
     background:#780116; 
+    font-weight:bold;
+}
+
+.link{
+    color:#ff6b35;
+    text-decoration:none;
+}
+
+.link:hover{
+    border-bottom:1px solid #ff6b35;
+    padding-bottom:4px;
 }
 
 /* Produkte * * * * * * * */
@@ -474,6 +500,9 @@ nav input[type="checkbox"]{
     padding:10px;
     border-radius:100%;
 }
+
+
+/* unterseite kontakt * * * * * * */
 
 
 
@@ -491,8 +520,8 @@ nav input[type="checkbox"]{
 
 #image-warum-anna{
     background:url("file:///C:/Users/annam/Documents/01-WORK/kw3/website/de/images/image-warum-anna.jpg");
-    padding-top:5%;
-    padding-bottom:25%;
+    padding-top:8%;
+    padding-bottom:30%;
     padding-left:25%;
     background-position:center;
     
@@ -501,7 +530,7 @@ nav input[type="checkbox"]{
 #image-warum-philipp{
     background:url("file:///C:/Users/annam/Documents/01-WORK/kw3/website/de/images/image-warum-philipp.jpg");
     padding-top:5%;
-    padding-bottom:25%;
+    padding-bottom:30%;
     padding-left:15%;
     padding-right:40%;
     background-position:center;
@@ -516,6 +545,8 @@ nav input[type="checkbox"]{
     background-position:top left;  
 }
 
+/* unterseite webdesign etc preise (karten) * * * * * */
+
 section#karte-sp500{
     margin-bottom:0;
 }
@@ -524,132 +555,21 @@ section#karte-copytrading{
     margin-bottom:0!important;
 }
 
-
-
-.background{
-    background:none !important;
-}
-
-/* Werte * * * * * * * * */
-
-.blue-column{
-    background:#5995ED;
-}
-
-.orange-column{
-    background:#ff6b35;
-}
-
-.red-column{
-    background:#780116;
-}
-
-.darkblue-column{
-    background:#253C78;
-}
-
-#werte .row{
-    background:none;
-    color:#fff;
-    padding:0;
-}
-
-/* article * * * * * * * */
-
-.image-in-text{
-    margin:50px 0;
-}
-
-
-
-
-/* Icons * * * * * * * * */
-
-.icon {
-    margin-left:auto;
-    margin-right:auto;
-    display:block;
-    margin-bottom:12px;
-}
-
-
-
-
-/* Quotation * * * * * * * * */
-
-.big-quote{
-    font-size:28px;
-    color:#242325;
-   
-    text-align:center;
-}
-
-blockquote:before{
-    content:'"';
-    color:#ff6b35;
-    font-size:100px;
-    display:block;
-    margin-top:0;
-}
-
-blockquote:after, .sp500:after, copytrading:after, webdesign:after{
-    content:"Nina Baumann, Founder @ Linkspiel";
-    font-size:16px;
-    color:#242325;
-    display:block;
-    margin-top:12px;
-}
-
-.sp500:after{
-    content:"André Kostolany";
-}
-
-.copytrading:after{
-    content:"Mein tägliches Mantra";
-    font-size:16px;
-}
-
-.webdesign:after{
-    content:"Jakob Nielsen";
-}
-
-
-/* Listen * * * * * * * * */
-
-.column ul li{
-    margin-bottom:10px;
-}
-
-.column ul{
-    
-    list-style:none;  
-}
-
-
-.column ul li img{
-    padding-right:10px;
-    padding-top:15px;
-    display:inline;
-}
-
-
-/* Karten * * * * * * * * */
-
 .colored-background{
     background:#5995ED;
 }
 
 #karte-sp500 .row, #karte-webdesign .row, #karte-seo .row, #karte-copytrading .row{
-    padding:60px 0 0;
+    
     background:none;
+    margin:30px 0 90px;
 }
 
-#karte-sp500 .column, #karte-webdesign .column, #karte-seo .column, #karte-copytrading .column{
+#karte-sp500 .column, #karte-seo .column, #karte-copytrading .column{
     
     background:#fff;
-    border:20px solid #5995ED;
-    margin:0 auto; 
-    padding:30px 50px; 
+    border:20px solid #5995ED; 
+    padding:50px; 
 }
 
 #karte-sp500 .column{
@@ -658,11 +578,14 @@ blockquote:after, .sp500:after, copytrading:after, webdesign:after{
 #karte-webdesign .column{
     margin-left:25%;  
     width:50%;
+    background:#fff;
+    border:20px solid #5995ED;
+    padding:50px;
 }
 
 #karte-seo .column{
     width:33%;
-    height:750px;
+    height:min-content;
 }
 
 #karte-seo h3, #karte-webdesign h3{
@@ -721,6 +644,127 @@ blockquote:after, .sp500:after, copytrading:after, webdesign:after{
 }
 
 
+.background{
+    background:none !important;
+    margin-bottom:90px!important;
+} /* inhalte mit icons in spalten ohne hintergrundfarbe */
+
+
+/* Werte * * * * * * * * */
+
+.blue-column{
+    background:#5995ED;
+}
+
+.orange-column{
+    background:#ff6b35;
+}
+
+.red-column{
+    background:#780116;
+}
+
+.darkblue-column{
+    background:#253C78;
+}
+
+#werte .row{
+    background:none;
+    color:#fff;
+    padding:0;
+}
+
+/* article * * * * * * * */
+
+.image-in-text{
+    margin:50px 0;
+}
+
+.wrapper-content-blog blockquote{
+    padding:0 24px;
+    margin-top:90px;
+}
+
+
+
+
+/* Icons * * * * * * * * */
+
+.icon {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    margin-bottom:12px;
+}
+
+
+
+
+/* Quotation * * * * * * * * */
+
+.big-quote{
+    font-size:28px;
+    color:#242325;
+   
+    text-align:center;
+}
+
+blockquote{
+    margin-bottom:220px;
+    padding:0 220px;
+}
+
+blockquote:before{
+    content:'"';
+    color:#ff6b35;
+    font-size:100px;
+    display:block;
+    margin-top:0;
+}
+
+blockquote:after, .sp500:after, copytrading:after, webdesign:after{
+    content:"Nina Baumann, Founder @ Linkspiel";
+    font-size:16px;
+    color:#242325;
+    display:block;
+    margin-top:12px;
+}
+
+.sp500:after{
+    content:"André Kostolany";
+}
+
+.copytrading:after{
+    content:"Mein tägliches Mantra";
+    font-size:16px;
+}
+
+.webdesign:after{
+    content:"Jakob Nielsen";
+}
+
+/* Was mein Angebot auszeichnet* * * * * * */
+
+
+/* Listen * * * * * * * * */
+
+.column ul li{
+    margin-bottom:10px;
+}
+
+.column ul{
+    
+    list-style:none;  
+}
+
+
+.column ul li img{
+    padding-right:10px;
+    padding-top:15px;
+    display:inline;
+}
+
+
 /* Tabelle * * * * * * * * */
 
 table, thead, th, tr, tbody{
@@ -746,7 +790,7 @@ td{
 
 }
 
-/* Tools for Mobile * * * * * * * * */
+/* unterseite seo tools for Mobile * * * * * * * * */
 
 #tools-list{
     color:#171614;
@@ -761,14 +805,65 @@ td{
     padding:8px 0;
 }
 
+/* unterseite seo, webdesign tools section* * * * * * */
 
-
-
-/* Rechtliches * * * * * * * * */
-
-.wrapper-content-rights h1{
+#tools .row{
+    background:#ff6b35;
     color:#fff;
-    margin:20px 0;  
+    text-align:center;
+}
+
+#tools h2{
+text-align:center;
+padding:0 15%;
+}
+
+/* unterseite webdesign etc. problem-lösung * * * * * */
+
+.grey-background-mobile{
+    display:none;
+}
+.grey-background{
+    background:#DCDCDC;
+}
+
+.row.grey-background{
+    padding:60px;
+}
+
+
+
+.grey-background li{
+    padding-left:85px;
+    padding-right:40px;
+}
+
+.grey-background h3{
+    padding-left:15px;
+    padding-top:20px;
+}
+
+.grey-background img, .grey-background h3{
+    display:inline;
+    float:left;
+}
+
+.grey-background .half{
+padding:0;
+}
+
+
+
+
+
+/* rechtliches * * * * * * * * */
+
+.colored-background h1{
+    color:#fff;    
+}
+
+.wrapper-content-rights h2{
+    margin-top:90px;
 }
 
 
@@ -778,16 +873,10 @@ td{
     width:100%;
     float:left;
     background:#f5f5f5;
-    margin:0 0 60px;
+    margin:0 0 120px;
     padding:20px;
     
     
-}
-
-.blue{
-    background:#5995ED;
-    color:#fff;
-    text-align:center;
 }
 
 .weiß{
@@ -847,6 +936,31 @@ width:50%;
 
     /* layout */
 
+.colored-background h1, #backgroundimage-kontakt, #backgroundimage-sp500, #backgroundimage-copytrading, #backgroundimage-webdesign, #backgroundimage-seo, #backgroundimage-wir{
+    margin-top:60px;
+}
+
+#backgroundimage-copytrading{
+    background-position:center;
+}
+
+.wrapper-content{
+    padding:0 24px;
+}
+section{
+    margin:0;
+}
+section.without-padding{
+    padding:0;
+}
+
+.logo{
+        padding:0;
+        width:80px;
+        margin-left:40px;
+        margin-top:10px;
+       }
+
 section{
     margin:0;
 }
@@ -856,10 +970,8 @@ section{
     height:75%;
 }
 
-ul#navigation li a{
-    font-size:20px;
-    font-size:1.25rem;
-}
+/* navigation * * * * * * */
+
 
 nav li {
     font-size:18px;
@@ -867,12 +979,32 @@ nav li {
     padding:10px;
 }
 
-/* Typografie * * * * * * */
+/* typografie * * * * * * */
 
 h1{
     font-size:48px;
     margin-top:0;
-    
+}
+
+h2{
+    font-size:32px;
+}
+
+h3{
+    font-size:28px;
+}
+
+h4{
+    font-size:24px;
+}
+
+/* call to action, button * * * * * */
+
+.button-last{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:35%;
 }
 
 /* teaser homepage * * * */
@@ -888,8 +1020,6 @@ h1{
 .textoverimage{
     width:50%;
 }
-
-
 
 /* preise und pakete */
 
@@ -908,11 +1038,57 @@ h1{
     margin:0 0 30px;
 }
 
+/* Warum wir, philipp, anna * * * * */
+#image-warum-philipp{
+    padding-top:20%;
+}
+
+.heading-two-on-image{
+    width:80%;
+}
+
+#image-warum-anna{
+    background-position:left;
+    padding-top:25%;
+}
+
+/* quotation * * * * * * */
+
+
+
+/* unterseite rechtliches * * * * * * */
+
+.wrapper-content-rights{
+    padding:0 24px;
+}
+
+.colored-background h1{
+    padding:90px 0 0;
+}
+
+
+/* unterseite webdesign Tools * * * * * */
+
+#tools-list{
+    display:block;
+}
+
+#tools{
+    display:none;
+}
+
+
+
 }
 
 @media only screen and (max-width:759px){
 
     /* navigation, logo, header */
+
+    .colored-background h1, #backgroundimage-kontakt, #backgroundimage-sp500, #backgroundimage-copytrading, #backgroundimage-webdesign, #backgroundimage-seo, #backgroundimage-wir{
+        margin-top:90px;
+        padding:60px 0;
+    }
 
     section{
         padding-left:24px;
@@ -924,6 +1100,7 @@ h1{
         padding:0;
     }
 
+   
    .logo{
     padding:0;
     width:80px;
@@ -939,9 +1116,11 @@ h1{
     .toggle-button{
         display:flex;
     }
+
     nav{
         height:70px;
     }
+
     nav ul{
         height:min-content;
         width:100%;
@@ -1010,6 +1189,12 @@ h1{
         font-size:24px;
     }
 
+    h4{
+        font-size:20px;
+    }
+
+    /* homepage benefits* * * * * * */
+   
    
     /* teaser homepage*/
    
@@ -1022,11 +1207,11 @@ h1{
         display:block;
     }
 
-    #image-header{
+    img#image-header{
         display:flex;
         align-items:center;
         justify-content:space-between;
-        margin-top:15px;
+        margin-top:90px;
         margin-bottom:15px;
     }
 
@@ -1048,15 +1233,29 @@ h1{
     }
 
     .button{
-        margin-bottom:60px;
+        margin-bottom:30px;
+    }
+
+    .button-last{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin:0 20%;
+    }
+
+    
+    #backgroundimage-kontakt{
+        background-position:center;
     }
 
     #backgroundimage-seo{
-        background-position:right;
+        background-image:url("file:///C:/Users/annam/Documents/01-WORK/kw3/website/de/images/image-teaser-seo.jpg");
+        background-position:center;
         margin-bottom:0;    
     }
 
     #backgroundimage-webdesign{
+        background-image:url("file:///C:/Users/annam/Documents/01-WORK/kw3/website/de/images/image-teaser-webdesign-mobile.jpg");
         background-position:center;
         margin-bottom:0;
     }
@@ -1072,12 +1271,53 @@ h1{
         color:#171614;
     }
 
+    /* unterseite kontakt * * * * * * */
+
+    #backgroundimage-kontakt img{
+        width:40px;
+    }
+
+    #backgroundimage-kontakt p{
+        padding-bottom:15%;;
+    }
 
 
-    /* section probleme-lösung */
+    /* unterseite webdesign, seo etc probleme-lösung */
+
+    .grey-background-mobile{
+        display:block;
+    }
+
+    .grey-background{
+        display:none;
+    }
 
     section{
         margin:0;
+    }
+    
+    section.without-padding{
+        padding:0;
+    }
+    
+    /* unterseite rechtliches * * * * * * */
+
+    .wrapper-content-rights{
+        padding:0 24px;
+    }
+
+    .colored-background h1{
+        padding:60px 0 0 0;
+    }
+
+    li{
+        margin-left:15px;
+    }
+
+    /* unterseite webdesign, seo, geldanlagen etc preise * * * * * * */
+
+    section#karte-seo, section#karte-sp500, section#karte-webdesign, section#karte-copytrading{
+        padding:0;
     }
 
     .image-bottom{
@@ -1088,15 +1328,25 @@ h1{
         display:block;
     }
 
-    .big-quote{
-        font-size:20px;
-        margin-bottom:60px;
-        margin-left:10%;
-        margin-right:10%;
-    }
+   
 
     .half li{
         text-align:center;
+    }
+
+    /* quotation * * * * * * */
+
+    blockquote{
+        padding:0 24px;
+        margin-bottom:160px;
+    }
+
+    .big-quote{
+        font-size:24px;
+    }
+
+    .row.grey-background{
+        margin-bottom:90px;
     }
 
     /* karte */
@@ -1124,13 +1374,22 @@ h1{
         margin-left:0;
     }
 
-    /* warum anna */
+    /* unterseite webdesign, seo etc. warum wir, warum philipp, warum anna */
+
+    #image-warum-wir{
+        background-position:top left;
+        padding-left:15%;
+        padding-bottom:45%;
+        padding-right:35%;
+        padding-top:10%;
+    }
 
     #image-warum-anna{
+        background-image:url("file:///C:/Users/annam/Documents/01-WORK/kw3/website/de/images/image-warum-anna-mobile.jpg");
         background-position:left;
         padding-left:10%;
-        padding-top:70%;
-        padding-bottom:10%;
+        padding-top:80%;
+        padding-bottom:20%;
     }
 
     .heading-two-on-image{
@@ -1140,7 +1399,15 @@ h1{
         line-height:2.2rem;
     }
 
-    /* Tools list */
+    #image-warum-philipp{
+        padding-top:25%;
+        padding-bottom:50%;
+        padding-left:10%;
+    }
+
+
+
+    /* Unterseite Webdesign Tools * * * * * */
 
     #tools-list{
         display:block;
@@ -1158,13 +1425,17 @@ h1{
     }
 
     .row{
-        margin:0 0 30px;
+        margin:0 0 60px;
     }
+
+   
 
 
     .half{
         width:100%;
     }
+
+ 
 
     .third{
         width:100%;
@@ -1180,6 +1451,7 @@ h1{
 
     .fourth{
         width:100%;
+        padding-bottom:60px;
     }
 
     
@@ -1199,4 +1471,22 @@ h1{
         text-align:center;
     }
 
+    /* unterseite wer wir sind * * * * * * */
+
+    #werte{
+        margin:0;
+        padding:0;
+      }
+    
+      #werte h4, #werte h3, #werte p{
+        padding:0 24px;
+      }
+
+      h4{
+        margin-top:25px;
+      }
+
+      .image-in-text{
+        margin-top:20px;
+      }
 }

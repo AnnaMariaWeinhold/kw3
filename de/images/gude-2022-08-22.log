@@ -1,0 +1,11 @@
+14:56:49:516 [WARN]	WGudeRequest::applyAutoDetectProxyAutoConfigSettings Failed to autodetect proxy settings. Der Vorgang wurde erfolgreich beendet.
+, last error code = 0 
+14:56:58:326 [WARN]	Request Failed. ErrorCode: 32 errorMessage: Network Error, Send Request Failed. WinHTTP Connection Error. last error code = 12030 
+14:56:59:589 [WARN]	WGudeRequest::applyAutoDetectProxyAutoConfigSettings Failed to autodetect proxy settings. Der Vorgang wurde erfolgreich beendet.
+, last error code = 0 
+14:57:00:027 [WARN]	WGudeRequest::applyAutoDetectProxyAutoConfigSettings Failed to autodetect proxy settings. Der Vorgang wurde erfolgreich beendet.
+, last error code = 0 
+14:57:06:951 [WARN]	WGudeRequest::applyAutoDetectProxyAutoConfigSettings Failed to autodetect proxy settings. Der Vorgang wurde erfolgreich beendet.
+, last error code = 0 
+14:59:48:205 [WARN]	WGudeRequest::applyAutoDetectProxyAutoConfigSettings Failed to autodetect proxy settings. Der Vorgang wurde erfolgreich beendet.
+, last error code = 0 
