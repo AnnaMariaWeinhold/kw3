@@ -376,7 +376,7 @@ nav input[type="checkbox"]{
 }
 
 #backgroundimage-kontakt{
-    background:url("file:///C:/Users/annam/Documents/01-WORK/kw3/website/de/images/image-teaser-kontakt.jpg");
+    background-image:url('/images/image-teaser-kontakt.jpg');
     background-position:left;
     background-repeat:no-repeat;
     margin-bottom:0!important;
@@ -405,7 +405,7 @@ nav input[type="checkbox"]{
 }
 
 #backgroundimage-seo{
-    background:url("file:///C:/Users/annam/Documents/01-WORK/kw3/website/de/images/image-teaser-seo.jpg");
+    background-image:url('/images/image-teaser-seo.jpg');
     background-position:center;
 }
 
@@ -543,6 +543,7 @@ p.textoverimage{
     padding-right:20%;
     background-position:top left;  
 }
+
 
 /* unterseite webdesign etc preise (karten) * * * * * */
 
