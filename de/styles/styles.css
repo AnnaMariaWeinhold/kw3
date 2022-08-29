@@ -823,6 +823,11 @@ text-align:center;
 padding:0 15%;
 }
 
+#tools .row{
+    margin-bottom:0;
+    border-bottom:solid 2px #fff;
+}
+
 /* unterseite webdesign etc. problem-lösung * * * * * */
 
 .grey-background-mobile{
@@ -871,6 +876,14 @@ padding:0;
     margin-top:90px;
 }
 
+/* Grafik s&P500 * * * * */
+
+#main{
+    margin:90px 0;
+    float:left;
+    width:100%;
+    height:600px;
+}
 
 /* Raster * * * * * * * * */
 
