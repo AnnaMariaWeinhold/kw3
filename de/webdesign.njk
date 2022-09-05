@@ -2,34 +2,11 @@
 <html lang="de">
 
 <head>
-    <meta charset="uft-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1">
+    {% include "./components/head.njk" %}
+
     <title>kw³ | Webdesign</title>
     <meta name="description"
         content="für besseres online Auftreten mit Struktur, mehr Persönlichkeit und dem richtigen Look&Feel">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="fonts/" rel="stylesheet">
-
-    <!-- Flavicon Icon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
 </head>
 
 <body>
@@ -37,38 +14,8 @@
     <div class="wrapper">
 
         <!-- Kopfleiste -->
-        <header>
+        {% include "./components/nav.njk" %}
 
-            <nav>
-                <a href="index.html" class="logo"><img src="images/logo-test.png" width="100" height=""
-                        alt="Logo kw³ solutions"></a>
-                <input type="checkbox" id="toggle-button">
-                <label for="toggle-button" class="toggle-button">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </label>
-
-                <ul>
-                    <li><a href="seo.html">SEO</a></li>
-                    <li><a href="webdesign.html" class="active">Webdesign</a></li>
-                    <li class="expandable-li">
-                        <input type="checkbox" id="geldanlage-checkbox">
-                        <label for="geldanlage-checkbox">Geldanlage</label>
-
-                        <ul class="dropdown">
-                            <li><a href="s&p500-strategie.html">S&P 500</a></li>
-                            <li><a href="copytrading.html">Copytrading</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="wer-wir-sind.html">Wer wir sind</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                </ul>
-
-            </nav>
-
-        </header>
 
         <!-- Teaser -->
 
@@ -79,7 +26,7 @@
                 Sie ist auf das Wesentlichste reduziert, persönlich und individuell.
                 <br>
 
-                <a href="kontakt.html" class="button">Jetzt kontaktieren</a>
+                <a href="/dekontakt" class="button">Jetzt kontaktieren</a>
             </p>
         </div>
 
@@ -90,12 +37,12 @@
             <div class="row grey-background">
                 <div class="wrapper-content">
                     <div class="column half">
-                        <img class="icon" src="images/icon-sad-bear.svg" width="70" height="70">
+                        <img class="icon" src="/images/icon-sad-bear.svg" width="70" height="70">
                         <h3>Du möchtest...</h3>
                     </div>
 
                     <div class="column half">
-                        <img class="icon" src="images/happy-bear.svg" width="70" height="70">
+                        <img class="icon" src="/images/happy-bear.svg" width="70" height="70">
                         <h3>Dann brauchst du...</h3>
                     </div>
 
@@ -124,7 +71,7 @@
             <div class="row grey-background-mobile">
                 <div class="wrapper-content">
                     <div class="column half">
-                        <img class="icon" src="images/icon-sad-bear.svg" width="70" height="70">
+                        <img class="icon" src="/images/icon-sad-bear.svg" width="70" height="70">
                         <h3 class="heading-three-center">Du möchtest...</h3>
                         <ul>
                             <li>...deinen Usern eine Erlebnis bieten.</li>
@@ -134,7 +81,7 @@
                     </div>
 
                     <div class="column half">
-                        <img class="icon" src="images/happy-bear.svg" width="70" height="70">
+                        <img class="icon" src="/images/happy-bear.svg" width="70" height="70">
                         <h3 class="heading-three-center">Dann brauchst du...</h3>
                         <ul>
                             <li>...eine Website, auf der sich der User einfach zu Recht findet.</li>
@@ -161,7 +108,7 @@
             <div class="row background">
                 <h2 class="heading-two-center">Ich biete dir</h2>
                 <div class="column fourth">
-                    <img src="images/icon-bowling.svg" class="icon" width="70" height="70">
+                    <img src="/images/icon-bowling.svg" class="icon" width="70" height="70">
                     <h3 class="heading-three-center">Inhalt & SEO</h3>
                     <p class="text-center">Was möchtest du auf deiner Website haben? Was ist wirklich wichtig? Wir
                         strukturieren und ordnen deine Inhalte.
@@ -169,7 +116,7 @@
                 </div>
 
                 <div class="column fourth">
-                    <img src="images/icon-key.svg" class="icon" width="70" height="70">
+                    <img src="/images/icon-key.svg" class="icon" width="70" height="70">
                     <h3 class="heading-three-center">Design</h3>
                     <p class="text-center">Ich stelle dir ein Farbkonzept zusammen, wähle Schriften aus,
                         definiere erste Elemente, designe ein Logo, und entwerfe Moodboards und Wireframes.
@@ -177,7 +124,7 @@
                 </div>
 
                 <div class="column fourth">
-                    <img src="images/icon-light-bulb.svg" class="icon" width="70" height="70">
+                    <img src="/images/icon-light-bulb.svg" class="icon" width="70" height="70">
                     <h3 class="heading-three-center">Code</h3>
                     <p class="text-center">Ich verpacke die Designentwürfe in eine Website, welche ich mit Html, CSS
                         und Javascript schreibe.
@@ -186,7 +133,7 @@
                 </div>
 
                 <div class="column fourth">
-                    <img src="images/icon-pin.svg" class="icon" width="70" height="70">
+                    <img src="/images/icon-pin.svg" class="icon" width="70" height="70">
                     <h3 class="heading-three-center">Launch</h3>
                     <p class="text-center">Wir besprechen die Entwürfe und die Website bevor sie online geht. Wenn
                         nötig, arbeite ich Änderungen ein.
@@ -301,22 +248,22 @@
 
 
                         <ul>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Designentwürfe</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Definition von Farben,
+                            <li><img src="/images/icon-arrow.svg" width="35" height="35">Designentwürfe</li>
+                            <li><img src="/images/icon-arrow.svg" width="35" height="35">Definition von Farben,
                                 Schriften, Logo und Formen</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Erstellen von Grafiken</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Auswahl von Fotos</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Codieren</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Texten</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">SEO</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Korrekturen nach
+                            <li><img src="/images/icon-arrow.svg" width="35" height="35">Erstellen von Grafiken</li>
+                            <li><img src="/images/icon-arrow.svg" width="35" height="35">Auswahl von Fotos</li>
+                            <li><img src="/images/icon-arrow.svg" width="35" height="35">Codieren</li>
+                            <li><img src="/images/icon-arrow.svg" width="35" height="35">Texten</li>
+                            <li><img src="/images/icon-arrow.svg" width="35" height="35">SEO</li>
+                            <li><img src="/images/icon-arrow.svg" width="35" height="35">Korrekturen nach
                                 Feedbackrunden</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Launch</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Html-Vorlagen für
+                            <li><img src="/images/icon-arrow.svg" width="35" height="35">Launch</li>
+                            <li><img src="/images/icon-arrow.svg" width="35" height="35">Html-Vorlagen für
                                 Blogartikel</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Nachbetreuung</li>
+                            <li><img src="/images/icon-arrow.svg" width="35" height="35">Nachbetreuung</li>
                         </ul>
-                        <p><a href="kontakt.html" class="button-center">Ja, ich möchte mit dir reden.</a></p>
+                        <p><a href="/dekontakt" class="button-center">Ja, ich möchte mit dir reden.</a></p>
                     </div>
 
 
@@ -339,7 +286,7 @@
         <section>
             <div class="row background">
                 <div class="column third">
-                    <img src="images/icon-chatting.svg" class="icon" width="70" height="70">
+                    <img src="/images/icon-chatting.svg" class="icon" width="70" height="70">
                     <h3 class="heading-three-center">Individuelle Beratung</h3>
                     <p class="text-center">We need to talk ;).Dein Herzensprojekt wird zu
                         meinem.
@@ -348,7 +295,7 @@
                 </div>
 
                 <div class="column third">
-                    <img src="images/icon-open-lock.svg" class="icon" width="70" height="70">
+                    <img src="/images/icon-open-lock.svg" class="icon" width="70" height="70">
                     <h3 class="heading-three-center">Ehrliche Kommunikation</h3>
                     <p class="text-center">Ich werde dir nichts aufschwatzen, nur um verkaufen zu wollen.
                         Der Weg nach oben kann steinig sein.
@@ -358,7 +305,7 @@
                 </div>
 
                 <div class="column third">
-                    <img src="images/icon-heart-amor.svg" class="icon" width="70" height="70">
+                    <img src="/images/icon-heart-amor.svg" class="icon" width="70" height="70">
                     <h3 class="heading-three-center">Empathisch und motiviert</h3>
                     <p class="text-center">Wenn ich dich und dein Business verstehe, entwerfe ich eine Website, die
                         ihre Funktion erfüllt:
@@ -372,7 +319,7 @@
 
     <!-- last call to action -->
     <section>
-        <a href="kontakt.html" class="button-last">Jetzt kontaktieren</a>
+        <a href="/dekontakt" class="button-last">Jetzt kontaktieren</a>
     </section>
     </div>
 
@@ -386,8 +333,8 @@
 
 
 
-            <p><a href="datenschutz.html">Datenschutz</a> | <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a> |
-                <a href="risikohinweis.html">Risikohinweis</a> | <a href="impressum.html">Impressum</a>
+            <p><a href="/dedatenschutz">Datenschutz</a> | <a href="/denutzungsbedingungen">Nutzungsbedingungen</a> |
+                <a href="/derisikohinweis">Risikohinweis</a> | <a href="/deimpressum">Impressum</a>
             </p>
 
             <p>Copyright © 2022 KW³ Business Ltd</p>

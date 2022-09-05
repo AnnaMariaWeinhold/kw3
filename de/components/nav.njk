@@ -1,0 +1,38 @@
+<header>
+
+    <nav>
+        <a href="/de/" class="logo"><img src="/images/logo-test.png" width="100" height=""
+            alt="Logo kw³ solutions"></a>
+        <input type="checkbox" id="toggle-button">
+        <label for="toggle-button" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <ul>
+            <li><a id="seo" href="/de/seo">SEO</a></li>
+            <li><a id="webdesign" href="/de/webdesign">Webdesign</a></li>
+            <li class="expandable-li">
+                <input type="checkbox" id="geldanlage-checkbox">
+                <label for="geldanlage-checkbox">Geldanlage</label>
+
+                <ul class="dropdown">
+                    <li><a id="s-p-500-strategie" href="/de/s-p-500-strategie">S&P 500</a></li>
+                    <li><a id="copytrading" href="/de/copytrading">Copytrading</a></li>
+                </ul>
+            </li>
+            <li><a id="blog" href="/de/blog">Blog</a></li>
+            <li><a id="wer-wir-sind" href="/de/wer-wir-sind">Wer wir sind</a></li>
+            <li><a id="kontakt" href="/de/kontakt">Kontakt</a></li>
+        </ul>
+
+    </nav>
+    
+</header>
+
+<script type="module">
+    const splitPath = location.pathname.split("/").filter(Boolean);
+    const page = splitPath[splitPath.length - 1];
+    document.getElementById(page).classList.add("active");
+</script>

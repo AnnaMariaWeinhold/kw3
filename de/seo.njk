@@ -2,35 +2,10 @@
 <html lang="de">
 
 <head>
-    <meta charset="uft-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1">
     <title>kw³ | SEO für deinen Content</title>
     <meta name="description"
         content="Detaillierte Keyword Recherche, verständliche Texte mit Wiedererkennenungswert verbessern dein Ranking bei Google und co.">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="fonts/" rel="stylesheet">
-
-
-    <!-- Flavicon Icon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
+    {% include "./components/head.njk" %}
 </head>
 
 <body>
@@ -38,38 +13,8 @@
     <div class="wrapper">
 
         <!-- Kopfleiste -->
-        <header>
+        {% include "./components/nav.njk" %}
 
-            <nav>
-                <a href="index.html" class="logo"><img src="images/logo-test.png" width="100" height=""
-                        alt="Logo kw³ solutions"></a>
-                <input type="checkbox" id="toggle-button">
-                <label for="toggle-button" class="toggle-button">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </label>
-
-                <ul>
-                    <li><a href="seo.html" class="active">SEO</a></li>
-                    <li><a href="webdesign.html">Webdesign</a></li>
-                    <li class="expandable-li">
-                        <input type="checkbox" id="geldanlage-checkbox">
-                        <label for="geldanlage-checkbox">Geldanlage</label>
-
-                        <ul class="dropdown">
-                            <li><a href="s&p500-strategie.html">S&P 500</a></li>
-                            <li><a href="copytrading.html">Copytrading</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="wer-wir-sind.html">Wer wir sind</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                </ul>
-
-            </nav>
-
-        </header>
 
         <!-- Teaser -->
 
@@ -78,7 +23,7 @@
             <h1 class="headingoverimage">Mit SEO rankt dein Content ganz oben</h1>
             <p class="textoverimage">Ich sammel mit dir die wirklich interessanten Themen für deine Zielgruppe und
                 erstelle mit dir gemeinsam Texte, die ranken und gelesen werden. <br>
-                <a href="kontakt.html" class="button">Jetzt kontaktieren</a>
+                <a href="/dekontakt" class="button">Jetzt kontaktieren</a>
             </p>
         </div>
 
@@ -89,12 +34,12 @@
             <div class="row grey-background">
                 <div class="wrapper-content">
                     <div class="column half">
-                        <img class="icon" src="images/icon-sad-bear.svg" width="70" height="70">
+                        <img class="icon" src="/images/icon-sad-bear.svg" width="70" height="70">
                         <h3>Du hast keine Lust mehr...</h3>
                     </div>
 
                     <div class="column half">
-                        <img class="icon" src="images/happy-bear.svg" width="70" height="70">
+                        <img class="icon" src="/images/happy-bear.svg" width="70" height="70">
                         <h3>Du möchtest lieber...</h3>
                     </div>
 
@@ -121,7 +66,7 @@
             <div class="row grey-background-mobile">
                 <div class="wrapper-content">
                     <div class="column half">
-                        <img class="icon" src="images/icon-sad-bear.svg" width="70" height="70">
+                        <img class="icon" src="/images/icon-sad-bear.svg" width="70" height="70">
                         <h3 class="heading-three-center">Du hast keine Lust mehr...</h3>
                         <ul>
                             <li>...regelmäßig auf Social Media posten zu müssen.</li>
@@ -131,7 +76,7 @@
                     </div>
 
                     <div class="column half">
-                        <img class="icon" src="images/happy-bear.svg" width="70" height="70">
+                        <img class="icon" src="/images/happy-bear.svg" width="70" height="70">
                         <h3 class="heading-three-center">Du möchtest lieber...</h3>
                         <ul>
                             <li>...organischen Traffic generieren.</li>
@@ -159,7 +104,7 @@
             <h2 class="heading-two-center">Ich fokusiere mich auf</h2>
             <div class="row background">
                 <div class="column fourth">
-                    <img src="images/person-thinking.svg" class="icon" width="70" height="70">
+                    <img src="/images/person-thinking.svg" class="icon" width="70" height="70">
                     <h3 class="heading-three-center">Probleme der Zielgruppe</h3>
                     <p class="text-center">Welche Probleme haben die Menschen da draußen? Google liebt dich wenn du
                         den Menschen gibst, was sie brauchen:
@@ -168,13 +113,13 @@
                 </div>
 
                 <div class="column fourth">
-                    <img src="images/target.svg" class="icon" width="70" height="70">
+                    <img src="/images/target.svg" class="icon" width="70" height="70">
                     <h3 class="heading-three-center">Suchintention</h3>
                     <p class="text-center">Was möchte deine Zielgruppe mit der Suche erreichen?</p>
                 </div>
 
                 <div class="column fourth">
-                    <img src="images/search.svg" class="icon" width="70" height="70">
+                    <img src="/images/search.svg" class="icon" width="70" height="70">
                     <h3 class="heading-three-center">Sprache und Keywords</h3>
                     <p class="text-center">Welche Wörter und Wortgruppen gibt deine Zielgruppe in die Suchmaske ein?
                         Du brauchst einfach und verständliche Texte mit individuellem Touch, dass deine Texte
@@ -184,7 +129,7 @@
                 </div>
 
                 <div class="column fourth">
-                    <img src="images/coffee.svg" class="icon" width="70" height="70">
+                    <img src="/images/coffee.svg" class="icon" width="70" height="70">
                     <h3 class="heading-three-center">Vernetzen mit Backlinks</h3>
                     <p class="text-center">Welche Wörter und Wortgruppen gibt deine Zielgruppe in die Suchmaske ein?
                         Einfach und verständliche Texte mit individuellen Touch brauchst du, dass deine Texte
@@ -279,13 +224,13 @@
                             Ich überprüfe deine Texte auf:</p>
 
                         <ul>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">SEO</i>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Verständlichkeit</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Struktur</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Bildmaterial</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Ranking Potential</li>
+                            <li><img src="/images/icon-arrow.svg" width="35" height="35">SEO</i>
+                            <li><img src="/images/icon-arrow.svg" width="35" height="35">Verständlichkeit</li>
+                            <li><img src="/images/icon-arrow.svg" width="35" height="35">Struktur</li>
+                            <li><img src="/images/icon-arrow.svg" width="35" height="35">Bildmaterial</li>
+                            <li><img src="/images/icon-arrow.svg" width="35" height="35">Ranking Potential</li>
                         </ul>
-                        <p><a href="kontakt.html" class="button-center">Ja, ich möchte mit dir reden.</a></p>
+                        <p><a href="/dekontakt" class="button-center">Ja, ich möchte mit dir reden.</a></p>
                     </div>
 
                     <div class="column third">
@@ -296,13 +241,13 @@
                             für das nächste Jahr. Folgende Dinge sind enthalten:
                         </p>
                         <ul>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Themen</i>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Keywordlisten</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Konkurrenten</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Backlink Plan</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Schreibtipps</li>
+                            <li><img src="/images/icon-arrow.svg" width="35" height="35">Themen</i>
+                            <li><img src="/images/icon-arrow.svg" width="35" height="35">Keywordlisten</li>
+                            <li><img src="/images/icon-arrow.svg" width="35" height="35">Konkurrenten</li>
+                            <li><img src="/images/icon-arrow.svg" width="35" height="35">Backlink Plan</li>
+                            <li><img src="/images/icon-arrow.svg" width="35" height="35">Schreibtipps</li>
                         </ul>
-                        <p><a href="kontakt.html" class="button-center">Ja, ich möchte mit dir reden.</a></p>
+                        <p><a href="/dekontakt" class="button-center">Ja, ich möchte mit dir reden.</a></p>
                     </div>
 
 
@@ -312,7 +257,7 @@
                         <p>Wir erarbeiten deine Kosten und deine Bedürfnisse in den Vorgesprächen.
                             So bekommst du genau das, was du brauchst, um deine Ziele zu erreichen.
                         </p>
-                        <p><a href="kontakt.html" class="button-center">Ja, ich möchte mit dir reden.</a></p>
+                        <p><a href="/dekontakt" class="button-center">Ja, ich möchte mit dir reden.</a></p>
                     </div>
                 </div>
             </div>
@@ -330,19 +275,19 @@
         <section>
             <div class="row background">
                 <div class="column third">
-                    <img src="images/icon-bohrmaschine.svg" class="icon" width="70" height="70">
+                    <img src="/images/icon-bohrmaschine.svg" class="icon" width="70" height="70">
                     <h3 class="heading-three-center">Genau</h3>
                     <p class="text-center">Ich arbeite genau und liefer Qualität.</p>
                 </div>
 
                 <div class="column third">
-                    <img src="images/icon-sanduhr.svg" class="icon" width="70" height="70">
+                    <img src="/images/icon-sanduhr.svg" class="icon" width="70" height="70">
                     <h3 class="heading-three-center">Effizient</h3>
                     <p class="text-center">Ich habe einen erprobten und ergebnisorientierten Workflow entwickelt.</p>
                 </div>
 
                 <div class="column third">
-                    <img src="images/icon-raumschiff.svg" class="icon" width="70" height="70">
+                    <img src="/images/icon-raumschiff.svg" class="icon" width="70" height="70">
                     <h3 class="heading-three-center">Logisch</h3>
                     <p class="text-center">Texte, die ich schreibe oder kontrolliere sind logisch strukturiert.</p>
                 </div>
@@ -352,7 +297,7 @@
 
         <!-- last call to action -->
         <section>
-            <a href="kontakt.html" class="button-last">Jetzt kontaktieren</a>
+            <a href="/dekontakt" class="button-last">Jetzt kontaktieren</a>
         </section>
     </div>
 
@@ -367,8 +312,8 @@
 
 
 
-            <p><a href="datenschutz.html">Datenschutz</a> | <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a> |
-                <a href="risikohinweis.html">Risikohinweis</a> | <a href="impressum.html">Impressum</a>
+            <p><a href="/dedatenschutz">Datenschutz</a> | <a href="/denutzungsbedingungen">Nutzungsbedingungen</a> |
+                <a href="/derisikohinweis">Risikohinweis</a> | <a href="/deimpressum">Impressum</a>
             </p>
 
             <p>Copyright © 2022 KW³ Business Ltd</p>

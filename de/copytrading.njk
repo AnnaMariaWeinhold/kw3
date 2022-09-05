@@ -2,33 +2,9 @@
 <html lang="de">
 
 <head>
-    <meta charset="uft-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1">
+    {% include "./components/head.njk" %}
     <title>kw³ | Copytrading</title>
     <meta name="description" content="copytrading">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="fonts/" rel="stylesheet">
-
-
-    <!-- Flavicon Icon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
 
 </head>
 
@@ -37,38 +13,7 @@
     <div class="wrapper">
 
         <!-- Kopfleiste -->
-        <header>
-
-            <nav>
-                <a href="index.html" class="logo"><img src="images/logo-test.png" width="100" height=""
-                        alt="Logo kw³ solutions"></a>
-                <input type="checkbox" id="toggle-button">
-                <label for="toggle-button" class="toggle-button">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </label>
-
-                <ul>
-                    <li><a href="seo.html">SEO</a></li>
-                    <li><a href="webdesign.html">Webdesign</a></li>
-                    <li class="expandable-li">
-                        <input type="checkbox" id="geldanlage-checkbox">
-                        <label for="geldanlage-checkbox">Geldanlage</label>
-
-                        <ul class="dropdown">
-                            <li><a href="s&p500-strategie.html">S&P 500</a></li>
-                            <li><a href="copytrading.html" class="active">Copytrading</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="wer-wir-sind.html">Wer wir sind</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                </ul>
-
-            </nav>
-
-        </header>
+        {% include "./components/nav.njk" %}
 
         <!-- Teaser -->
         <div>
@@ -78,7 +23,7 @@
                 <h1 class="headingoverimage">Folge und kopiere meinen Account</h1>
                 <p class="textoverimage">Ich bin World Cup Advisor und trade auf meinem World Championship Account.
                     Meine Trades werden eins-zu-eins auf deinem Konto ausgeführt.<br>
-                    <a href="#" class="button">Jetzt Konto eröffnen</a>
+                    <a href="/de#" class="button">Jetzt Konto eröffnen</a>
 
                 </p>
 
@@ -117,7 +62,7 @@
                     </div>
 
                     <div class="column third image-bottom">
-                        <img src="images/image-seo.svg" class="image-circle" width="300" height="300"
+                        <img src="/images/image-seo.svg" class="image-circle" width="300" height="300"
                             alt="mit optimierten content besser ranken">
                     </div>
                 </div>
@@ -125,7 +70,7 @@
 
         <section>
             <blockquote class="big-quote copytrading">
-                Fokus. Fokus. Fokus. Trade ohne Angst und ohne Gier.
+                Fokus&period; Fokus&period; Fokus&period; Trade ohne Angst und ohne Gier.
             </blockquote>
         </section>
 
@@ -134,7 +79,7 @@
             <div class="row background">
                 <h2 class="heading-two-center">Was meine Strategie auszeichnet</h2>
                 <div class="column fourth">
-                    <img src="images/icon-bowling.svg" class="icon" width="70" height="70">
+                    <img src="/images/icon-bowling.svg" class="icon" width="70" height="70">
                     <h3 class="heading-three-center">Strategie mit Regelwerk</h3>
                     <p class="text-center">Ich handel nach der Swing Trading Strategie auf Basis von COT Daten. Die
                         Strategie ermöglicht eine optimale
@@ -143,7 +88,7 @@
                 </div>
 
                 <div class="column fourth">
-                    <img src="images/icon-key.svg" class="icon" width="70" height="70">
+                    <img src="/images/icon-key.svg" class="icon" width="70" height="70">
                     <h3 class="heading-three-center">Risiko Money Management</h3>
                     <p class="text-center">Ich folge einem robusten Risiko- und Moneymanagement. Ich trade mit
                         geringem Risiko.
@@ -151,7 +96,7 @@
                 </div>
 
                 <div class="column fourth">
-                    <img src="images/icon-light-bulb.svg" class="icon" width="70" height="70">
+                    <img src="/images/icon-light-bulb.svg" class="icon" width="70" height="70">
                     <h3 class="heading-three-center">Fundamentale Marktauswahl </h3>
                     <p class="text-center">Ich analysiere die Märkte mit einer fundamental Analyse. Ich werte COT
                         Daten, Wetterlage, Momentum und Trend aus.
@@ -159,7 +104,7 @@
                 </div>
 
                 <div class="column fourth">
-                    <img src="images/icon-pin.svg" class="icon" width="70" height="70">
+                    <img src="/images/icon-pin.svg" class="icon" width="70" height="70">
                     <h3 class="heading-three-center">Richtiges Timing und Einstieg</h3>
                     <p class="text-center">Je nach Marktauswahl, warte ich das richtige Timing ab. Der Einstieg
                         erfolgt durch Price Action Patterns.
@@ -189,7 +134,7 @@
                         <div class="circle nummer">4</div>
                         <p>Dein Konto wächst ohne Aufwand für dich.</p>
 
-                        <p><a href="https://t.me/ETFAmpel" class="button-center">Jetzt ein Konto eröffnen</a></p>
+                        <p><a href="/dehttps://t.me/ETFAmpel" class="button-center">Jetzt ein Konto eröffnen</a></p>
                     </div>
 
                     <div class="column two-third">
@@ -247,7 +192,7 @@
 
             <div class="row background">
                 <div class="column third">
-                    <img src="images/icon-book.svg" class="icon" width="70" height="70">
+                    <img src="/images/icon-book.svg" class="icon" width="70" height="70">
                     <h3 class="heading-three-center">Börsenerfahrung</h3>
                     <p class="text-center">Du suchst nach einem erfahrenen Trader. Ich bin seit 2008 aktiv an der
                         Börse und
@@ -258,7 +203,7 @@
                 </div>
 
                 <div class="column third">
-                    <img src="images/icon-hat.svg" class="icon" width="70" height="70">
+                    <img src="/images/icon-hat.svg" class="icon" width="70" height="70">
                     <h3 class="heading-three-center">Nachweisbarer Erfolg</h3>
                     <p class="text-center">Du brauchst Sicherheit. Ich habe mit meiner Futures Trading Strategie an
                         der Trading
@@ -268,7 +213,7 @@
                 </div>
 
                 <div class="column third">
-                    <img src="images/icon-calculator.svg" class="icon" width="70" height="70">
+                    <img src="/images/icon-calculator.svg" class="icon" width="70" height="70">
                     <h3 class="heading-three-center">Analytische Denkweise</h3>
                     <p class="text-center">Du möchtest einem strategisch denkenden Menschen folgen. Ich mache meine
                         Analysen präzise
@@ -280,7 +225,7 @@
 
     <!-- last call to action -->
     <section>
-        <a href src="#" class="button-last"> Konto eröffnen</a>
+        <a href="#" class="button-last"> Konto eröffnen</a>
     </section>
     </div>
 
@@ -294,8 +239,8 @@
 
 
 
-            <p><a href="datenschutz.html">Datenschutz</a> | <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a> |
-                <a href="Risikohinweis">Risikohinweis</a> | <a href="impressum.html">Impressum</a>
+            <p><a href="/dedatenschutz">Datenschutz</a> | <a href="/denutzungsbedingungen">Nutzungsbedingungen</a> |
+                <a href="/deRisikohinweis">Risikohinweis</a> | <a href="/deimpressum">Impressum</a>
             </p>
 
             <p>Copyright © 2022 KW³ Business Ltd</p>

@@ -1,0 +1,28 @@
+{
+  "name": "kw3",
+  "version": "1.0.0",
+  "description": "Website for kw3",
+  "main": "dist/de/index.html",
+  "scripts": {
+    "dev": "npm run build && npx nodemon -e js,njk,json nunjucks/build.js",
+    "serve": "npx http-server ./dist",
+    "build": "rm -rf dist && node nunjucks/build.js && cp -r de/data de/font de/images de/scripts de/styles dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnaMariaWeinhold/kw3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnnaMariaWeinhold/kw3/issues"
+  },
+  "homepage": "https://github.com/AnnaMariaWeinhold/kw3#readme",
+  "dependencies": {
+    "nunjucks": "^3.2.3"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "nodemon": "^2.0.19"
+  }
+}
