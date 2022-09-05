@@ -2,35 +2,10 @@
 <html lang="de">
 
 <head>
-    <meta charset="uft-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1">
     <title>kw³ | Wir sind KW³</title>
     <meta name="description"
         content="Wir sind Anna und Philipp, die Gründer von KW³. Wir arbeiten ortsunabhängig und bauen gerade unser Online Business auf.">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="fonts/" rel="stylesheet">
-
-
-    <!-- Flavicon Icon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
+    {% include "./components/head.njk" %}
 </head>
 
 <body>
@@ -38,47 +13,14 @@
 
 
     <!-- Kopfleiste -->
-    <header>
-
-        <nav>
-            <a href="index.html" class="logo"><img src="images/logo-test.png" width="100" height=""
-                    alt="Logo kw³ solutions"></a>
-            <input type="checkbox" id="toggle-button">
-            <label for="toggle-button" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </label>
-
-            <ul>
-                <li><a href="seo.html">SEO</a></li>
-                <li><a href="webdesign.html">Webdesign</a></li>
-                <li class="expandable-li">
-                    <input type="checkbox" id="geldanlage-checkbox">
-                    <label for="geldanlage-checkbox">Geldanlage</label>
-
-                    <ul class="dropdown">
-                        <li><a href="s&p500-strategie.html">S&P 500</a></li>
-                        <li><a href="copytrading.html">Copytrading</a></li>
-                    </ul>
-                </li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="wer-wir-sind.html" class="active">Wer wir sind</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-
-        </nav>
-
-    </header>
+    {% include "./components/nav.njk" %}
 
     <!-- Teaser -->
-
-
     <div id="backgroundimage-wir">
         <h1 class="headingoverimage">Mit uns Alternativen gehen</h1>
         <p class="textoverimage">Die Elternzeit hat uns gezeigt wie wir leben wollen.
             Das online arbeiten hat es uns ermöglicht. Wir wollen anderen helfen, erfolgreich zu<br>
-            <a href="kontakt.html" class="button">Ja, ich möchte mehr erfahren.</a>
+            <a href="/dekontakt" class="button">Ja, ich möchte mehr erfahren.</a>
             <!--zur newsletter anmeldung-->
         </p>
 
@@ -128,7 +70,7 @@
                 Träume.
             </p>
 
-            <img class="image-in-text" src="images/image-philosophy.jpg">
+            <img class="image-in-text" src="/images/image-philosophy.jpg">
         </section>
 
     </div>
@@ -216,8 +158,8 @@
 
 
 
-            <p><a href="datenschutz.html">Datenschutz</a> | <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a> |
-                <a href="risikohinweis.html">Risikohinweis</a> | <a href="impressum.html">Impressum</a>
+            <p><a href="/dedatenschutz">Datenschutz</a> | <a href="/denutzungsbedingungen">Nutzungsbedingungen</a> |
+                <a href="/derisikohinweis">Risikohinweis</a> | <a href="/deimpressum">Impressum</a>
             </p>
 
             <p>Copyright © 2022 KW³ Business Ltd</p>
