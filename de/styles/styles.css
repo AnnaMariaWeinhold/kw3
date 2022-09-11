@@ -350,7 +350,6 @@ nav input[type="checkbox"] {
 /* Teaser unterseiten * * * * * * * * */
 
 #backgroundimage-seo,
-#backgroundimage-sp500,
 #backgroundimage-copytrading,
 #backgroundimage-webdesign,
 #backgroundimage-wir,
@@ -360,6 +359,10 @@ nav input[type="checkbox"] {
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: -90px;
+}
+
+#backgroundimage-sp500 {
+  color: #fff;
 }
 
 #backgroundimage-kontakt img {
@@ -393,11 +396,6 @@ nav input[type="checkbox"] {
 
 #backgroundimage-seo {
   background-image: url("../images/image-teaser-seo.jpg");
-  background-position: center;
-}
-
-#backgroundimage-sp500 {
-  background-image: url("../images/image-teaser-sp500.jpg");
   background-position: center;
 }
 
@@ -921,7 +919,6 @@ td {
 
   .colored-background h1,
   #backgroundimage-kontakt,
-  #backgroundimage-sp500,
   #backgroundimage-copytrading,
   #backgroundimage-webdesign,
   #backgroundimage-seo,
@@ -1068,7 +1065,6 @@ td {
 
   .colored-background h1,
   #backgroundimage-kontakt,
-  #backgroundimage-sp500,
   #backgroundimage-copytrading,
   #backgroundimage-webdesign,
   #backgroundimage-seo,
@@ -1245,11 +1241,6 @@ td {
     background-image: url("file:///C:/Users/annam/Documents/01-WORK/kw3/website/de/images/image-teaser-webdesign-mobile.jpg");
     background-position: center;
     margin-bottom: 0;
-  }
-
-  #backgroundimage-sp500 {
-    margin-bottom: 0;
-    background-position: right;
   }
 
   #backgroundimage-copytrading {
@@ -1485,4 +1476,12 @@ td {
   .image-in-text {
     margin-top: 20px;
   }
+}
+
+.teaser-object-fit {
+  object-fit: cover;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }

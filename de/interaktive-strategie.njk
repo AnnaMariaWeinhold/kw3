@@ -62,6 +62,8 @@
 
     <!-- Kopfleiste -->
     {% include "./components/nav.njk" %}
+    {# Nunjucks macro "image" - usage: {{ image(["/images/my-pic.webp", "/images/my-pic.jpg"], "Awesome alt text", "optional classes for the image") }} #}
+    {%- from "macros/image.njk" import image -%}
 
 
     <!-- Teaser -->
@@ -74,6 +76,8 @@
         und lerne meine Strategie kennen.<br>
         <a href="/dekontakt" class="button">Ja, ich möchte dir folgen.</a>
       </p>
+
+      {{ image(["/images/image-teaser-sp500.webp", "/images/image-teaser-sp500.jpg"], "Die Börsenampel zur S&P 500 Strategie", "teaser-object-fit") }}
 
     </div>
 

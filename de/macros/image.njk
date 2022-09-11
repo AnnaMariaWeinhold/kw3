@@ -1,0 +1,8 @@
+{% macro image(urls, alt='', customClass='') %}
+<picture>
+  {% for url in urls %}
+    <source srcset="{{ url }}">
+  {% endfor %}
+  <img src="{{ urls[0] }}" alt="{{ alt }}" class="{{ customClass }}">
+</picture>
+{% endmacro %}
