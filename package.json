@@ -4,8 +4,8 @@
   "description": "Website for kw3",
   "main": "dist/de/index.html",
   "scripts": {
-    "dev": "npm run build && npx nodemon -e js,njk,json nunjucks/build.js",
-    "serve": "npx http-server ./dist",
+    "watch": "npm run build && npx nodemon -e js,njk,json nunjucks/build.js",
+    "serve": "npx http-server ./dist --port 8080",
     "build": "rm -rf dist && node nunjucks/build.js && cp -r de/data de/font de/images de/scripts de/styles dist"
   },
   "repository": {

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  {% include "./components/head.njk" %}
+
+  <title>kw³ | S&P 500 Strategie</title>
+  <meta name="description" content="Die vielseitig einsetzbare Börsenampel">
+
+  <!-- echart javascript -->
+  <script src="/scripts/echarts.js"></script>
+
+  <style>
+    #chart-dialog {
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+      position: fixed;
+      z-index: 6;
+      width: 75vw;
+      margin: 100px auto;
+      overflow-y: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    #chart-dialog button {
+      background-color: #ff6b35;
+      border: none;
+      color: #fff;
+      padding: 15px 20px;
+      text-decoration: none;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    #chart-dialog button:active,
+    #chart-dialog button:focus {
+      transform: scaleY(0.95);
+      outline: 1px solid #780116;
+    }
+
+    #chart-dialog .backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      background-color: #fff;
+      z-index: -1;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <!-- Kopfleiste -->
+    {% include "./components/nav.njk" %}
+
+
+    <!-- Teaser -->
+
+
+    <div id="backgroundimage-sp500">
+      <h1 class="headingoverimage">Booste deine Performance</h1>
+      <p class="textoverimage">Wisse genau wann du in den Markt einsteigst und wann nicht. Komm in meine Telegram
+        Gruppe
+        und lerne meine Strategie kennen.<br>
+        <a href="/dekontakt" class="button">Ja, ich möchte dir folgen.</a>
+      </p>
+
+    </div>
+
+
+
+
+
+    <!-- Hauptinhalt -->
+
+    <section class="without-padding">
+      <div class="row grey-background">
+        <div class="wrapper-content">
+          <div class="column half">
+            <img class="icon" src="/images/icon-sad-bear.svg" width="70" height="70">
+            <h3>Du hast keine Lust mehr...</h3>
+          </div>
+
+          <div class="column half">
+            <img class="icon" src="/images/happy-bear.svg" width="70" height="70">
+            <h3>Du möchtest lieber...</h3>
+          </div>
+
+          <div class="column half">
+            <ul>
+              <li>...dich durch die Medienlandschaft nach aktuellen Börsentipps zu wühlen.</li>
+              <li>...den Ausstiegszeitpunkt vor einem Crash zu verpassen.</li>
+              <li>...unsicher und verwirrt darüber zu sein wann die Rally wieder beginnt.</li>
+            </ul>
+          </div>
+
+          <div class="column half">
+            <ul>
+              <li>...weniger Suchen und Interpretieren.</li>
+              <li>...vor einem Börsencrash informiert werden und nicht danach wenn es vorrüber ist.</li>
+              <li>...wissen wann du wirklich einsteigen und aussteigen solltest.</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+
+    <!-- problem-lösung for mobile -->
+    <section class="without-padding">
+      <div class="row grey-background-mobile">
+        <div class="wrapper-content">
+          <div class="column half">
+            <img class="icon" src="/images/icon-sad-bear.svg" width="70" height="70">
+            <h3 class="heading-three-center">Du hast keine Lust mehr...</h3>
+            <ul>
+              <li>...dich durch die Medienlandschaft nach aktuellen Börsentipps zu wühlen.</li>
+              <li>...den Ausstiegszeitpunkt vor einem Crash zu verpassen.</li>
+              <li>...unsicher und verwirrt darüber zu sein wann die Rally wieder beginnt.</li>
+            </ul>
+          </div>
+
+          <div class="column half">
+            <img class="icon" src="/images/happy-bear.svg" width="70" height="70">
+            <h3 class="heading-three-center">Du möchtest lieber...</h3>
+            <ul>
+              <li>...weniger Suchen und Interpretieren.</li>
+              <li>...vor einem Börsencrash informiert werden und nicht danach wenn es vorrüber ist.</li>
+              <li>...wissen wann du wirklich einsteigen und aussteigen solltest.</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+
+    <!-- quotation -->
+
+    <section>
+      <blockquote class="big-quote sp500">
+        Spekulieren kann jeder. Es zur <strong>richtigen Zeit</strong> zu tun - das ist die Kunst.
+      </blockquote>
+    </section>
+
+
+    <section>
+      <h2 class="heading-two-center">Was meine Strategie auszeichnet</h2>
+      <div class="row background">
+        <div class="column fourth">
+          <img src="/images/easy.svg" class="icon" width="70" height="70">
+          <h3 class="heading-three-center">Einfach und klar</h3>
+          <p class="text-center">Die Ampelfarben sind verständlich und du kannst sie in vielen Strategien
+            nutzen.
+          </p>
+        </div>
+
+        <div class="column fourth">
+          <img src="/images/watch.svg" class="icon" width="70" height="70">
+          <h3 class="heading-three-center">Wenig Zeit</h3>
+          <p class="text-center">Du kannst die Strategie eins-zu-eins mit wenigen Transaktionen im Jahr
+            umsetzen und damit den Markt schlagen.
+          </p>
+        </div>
+
+        <div class="column fourth">
+          <img src="/images/money-sack.svg" class="icon" width="70" height="70">
+          <h3 class="heading-three-center">Outperformance</h3>
+          <p class="text-center">Du schlägst den Markt.
+            Mit der Strategie bist du in Bullenmärkten investiert und in Bärenmärkten an der
+            Seitenlinie.
+          </p>
+        </div>
+
+        <div class="column fourth">
+          <img src="/images/colors.svg" class="icon" width="70" height="70">
+          <h3 class="heading-three-center">Vielseitig</h3>
+          <p class="text-center">Die Börsenampel kannst mit du verschiedenen Strategien auf
+            Finanzprodukte wie ETF's, Aktien, Optionen und Futures umsetzen.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- grafik sp500 strategie vs buy and hold -->
+    <section>
+      <h2 class="heading-two-center">Strategien im Vergleich</h2>
+      <div id="chart-controls">
+        <form>
+          <label for="start-money">Startkapital</label>
+          <input id="start-money" type="number">
+          <label for="start-date">Startdatum</label>
+          <input id="start-date" type="date">
+        </form>
+      </div>
+      <div id="interactive-chart" style="width: 100%; height: 600px">
+        <!-- E Chart will be mounted here -->
+      </div>
+
+      <div id="chart-dialog" role="dialog" style="display: none">
+        <h3>Da ist uns ein Fehler unterlaufen...</h3>
+        <p>Dein Startdatum scheint in unseren Daten nicht vorhanden zu sein. Meist liegt das daran, dass dein Wunschdatum auf ein Wochenende fällt.<br><br>Wähle bitte Werktage zwischen 1998 und 2021.</p>
+        <button>Verstanden</button>
+        <div class="backdrop"></div>
+      </div>
+
+      <script type="module">
+        function calculateStrategy(data, startMoney = 10000) {
+          const output = [];
+
+          let previousMoney = startMoney;
+          for (const [date, change, invested] of data) {
+            if (invested === "X") {
+              const newMoney = previousMoney * (1 + change / 100);
+              output.push(newMoney);
+              previousMoney = newMoney;
+            } else {
+              output.push(previousMoney);
+            }
+          }
+          return output;
+        }
+
+        function debounce(delay = 500, handler) {
+          let timeout;
+
+          return (event) => {
+            if (timeout) {
+              clearTimeout(timeout);
+            }
+            timeout = setTimeout(() => handler(event), delay);
+          };
+        }
+
+        (async () => {
+          const chart = echarts.init(document.getElementById("interactive-chart"));
+
+          const data = await fetch("/data/sp-basis.json").then(res => res.json());
+
+          const dataDescription = data.shift();
+          const dates = data.map((row) => row[0]);
+
+          const strategyName = "S&P Strategie";
+
+          const options = {
+            title: {
+              text: "S&P Strategy vs Buy-and-Hold",
+            },
+            xAxis: {
+              type: 'category',
+              data: dates
+            },
+            yAxis: {
+              type: 'value'
+            },
+            series: [
+              {
+                name: strategyName,
+                type: 'line',
+                data: calculateStrategy(data)
+              }
+            ]
+          };
+          const modal = document.getElementById("chart-dialog");
+          const modalCloseButton = document.querySelector("#chart-dialog button");
+          const startMoneyControl = document.getElementById("start-money");
+          startMoneyControl.addEventListener("change", (event) => {
+            const previousStrategy = options.series.find((serie) => serie.name === strategyName);
+            previousStrategy.data = calculateStrategy(data, Number(event.target.value));
+            chart.setOption(options);
+          });
+
+          const startDateControl = document.getElementById("start-date");
+          startDateControl.addEventListener("change", debounce(600, (event) => {
+            const formattedDate = event.target.value.split("-").reverse().join(".");
+            const startIndex = data.findIndex((row) => row[0] === formattedDate);
+
+            if (startIndex > -1) {
+              const newData = data.slice(startIndex);
+              const newOptions = {
+                ...options,
+                xAxis: {
+                  type: 'category',
+                  data: newData.map((row) => row[0])
+                },
+                series: [
+                  {
+                    name: strategyName,
+                    type: 'line',
+                    data: calculateStrategy(newData)
+                  }]
+              };
+              console.log(newOptions);
+              chart.setOption(newOptions);
+            } else {
+              // requested start date is likey a weekend
+              // debounce properly and/or disallow weekends entirey
+              modal.style.display = "block";
+              modalCloseButton.addEventListener("click", (event) => {
+                modal.style.display = "none";
+              });
+            }
+          }));
+
+          chart.setOption(options);
+        })();
+
+      </script>
+
+  </div>
+  </div>
+  </section>
+
+
+
+
+
+
+
+  <section id="karte-sp500">
+    <div class="colored-background">
+
+      <div class="wrapper-content">
+
+        <div class="row">
+          <div class="column half">
+            <h3>Börsenampel</h3>
+            <p class="preis">kostenlos</p>
+            <!--    <div class="circle rot"></div>
+                            <p>Bleibe besser an der Seitenlinie - Cash ist King!</p>
+                            <div class="circle gelb"></div>
+                            <p>Achtung! Der Markt könnte drehen</p>
+                            <div class="circle grün"></div>
+                            <p>Es ist die richtige Zeit in Indices und Aktien zu investieren.</p>-->
+
+            <ul>
+              <li><img src="/images/icon-arrow.svg" width="35" height="35">Telegram Channel</i>
+              <li><img src="/images/icon-arrow.svg" width="35" height="35">COT Signal</li>
+              <li><img src="/images/icon-arrow.svg" width="35" height="35">Moving Average</li>
+              <li><img src="/images/icon-arrow.svg" width="35" height="35">Trend</li>
+              <li><img src="/images/icon-arrow.svg" width="35" height="35">Momentum</li>
+              <li><img src="/images/icon-arrow.svg" width="35" height="35">Divergenz</li>
+              <li class="text-grey"><img src="/images/icon-arrow-grey.svg" width="35" height="35">konkrete
+                Handlungsanweisungen</li>
+              <li class="text-grey"><img src="/images/icon-arrow-grey.svg" width="35" height="35">100%
+                Transparenz meiner Umsetzung</li>
+              <li class="text-grey"><img src="/images/icon-arrow-grey.svg" width="35" height="35">Telegram
+                Chat</li>
+            </ul>
+            <p><a href="/dehttps://t.me/ETFAmpel" class="button-center">Ja, ich möchte beitreten.</a></p>
+          </div>
+
+          <div class="column half">
+            <h3>Börsenampel plus Signaldienst</h3>
+            <p class="preis">20€ / Monat</p>
+            <!--<div class="circle rot"></div>
+                            <p>Bleibe besser an der Seitenlinie - Cash ist King!</p>
+                            <div class="circle gelb"></div>
+                            <p>Achtung! Der Markt könnte drehen</p>
+                            <div class="circle grün"></div>
+                            <p>Es ist die richtige Zeit in Indices und Aktien zu investieren.</p>-->
+
+            <ul>
+              <li><img src="/images/icon-arrow.svg" width="35" height="35">Telegram Channel</i>
+              <li><img src="/images/icon-arrow.svg" width="35" height="35">COT Signal</li>
+              <li><img src="/images/icon-arrow.svg" width="35" height="35">Moving Average</li>
+              <li><img src="/images/icon-arrow.svg" width="35" height="35">Trend</li>
+              <li><img src="/images/icon-arrow.svg" width="35" height="35">Momentum</li>
+              <li><img src="/images/icon-arrow.svg" width="35" height="35">Divergenz</li>
+              <li><img src="/images/icon-arrow.svg" width="35" height="35">konkrete
+                Handlungsanweisungen</li>
+              <li><img src="/images/icon-arrow.svg" width="35" height="35">100% Transparenz meiner
+                Umsetzung</li>
+              <li><img src="/images/icon-arrow.svg" width="35" height="35">Telegram Chat</li>
+            </ul>
+            <p><a href="/dehttps://t.me/ETFAmpel" class="button-center">Ja, ich möchte kaufen.</a></p>
+
+          </div>
+  </section>
+
+  </div>
+  </div>
+
+  <section class="without-padding">
+
+    <div class="wrapper" id="image-warum-philipp">
+      <h2 class="heading-two-on-image">Warum solltest du mir folgen?</h2>
+    </div>
+
+    <!-- Hauptinhalt - Warum wir -->
+
+    <div class="wrapper-content">
+
+      <div class="row background">
+        <div class="column third">
+          <img src="/images/icon-book.svg" class="icon" width="70" height="70">
+          <h3 class="heading-three-center">Börsenerfahrung</h3>
+          <p class="text-center">Du suchst nach einem erfahrenen Trader. Ich bin seit 2008 aktiv an der Börse
+            und
+            habe anfangs CFD's und später Aktien, Optionsscheine auf Trendaktien und Optionen gehandelt.
+            Heute handel ich
+            Futures nach COT Daten, Saisonalität und Wetteranalyse und investiere strategisch auf Basis der
+            Börsenampel. </p>
+        </div>
+
+        <div class="column third">
+          <img src="/images/icon-hat.svg" class="icon" width="70" height="70">
+          <h3 class="heading-three-center">Nachweisbarer Erfolg</h3>
+          <p class="text-center">Du brauchst Sicherheit. Ich habe mit meiner Futures Trading Strategie an der
+            Trading
+            Weltmeisterschaft teilgenommen. Mit 64,1 % Rendite pro Jahr den 5. Platz belegt. Ich nehme
+            dieses Jahr erneut teil.
+          </p>
+        </div>
+
+        <div class="column third">
+          <img src="/images/icon-calculator.svg" class="icon" width="70" height="70">
+          <h3 class="heading-three-center">Analytische Denkweise</h3>
+          <p class="text-center">Du möchtest einem strategisch denkenden Menschen folgen. Ich mache meine
+            Analysen präzise
+            und sorfältig. Meine Entscheidungen treffe ich rational und auf Basis von Daten.</p>
+        </div>
+      </div>
+  </section>
+  </div>
+
+  <!-- last call to action
+    <section>
+        <div class="button-last">Jetzt folgen</div> 
+    </section>
+    </div>
+-->
+
+  <!-- Footer -->
+
+
+  <footer id="site-footer">
+    <section>
+      <h2>KW³ Solutions</h2>
+      <p>Dein Business. Deine Freiheit.</p>
+
+
+
+      <p><a href="/dedatenschutz">Datenschutz</a> | <a href="/denutzungsbedingungen">Nutzungsbedingungen</a> |
+        <a href="/derisikohinweis">Risikohinweis</a> | <a href="/deimpressum">Impressum</a>
+      </p>
+
+      <p>Copyright © 2022 KW³ Business Ltd</p>
+    </section>
+
+
+
+
+    </div>
+  </footer>
+
+
+
+
+
+</body>
+
+</html>

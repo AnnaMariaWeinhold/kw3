@@ -1,8 +1,7 @@
 <header>
 
     <nav>
-        <a href="/de/" class="logo"><img src="/images/logo-test.png" width="100" height=""
-            alt="Logo kw³ solutions"></a>
+        <a href="/de/" class="logo"><img src="/images/logo-test.png" width="100" height="" alt="Logo kw³ solutions"></a>
         <input type="checkbox" id="toggle-button">
         <label for="toggle-button" class="toggle-button">
             <span class="bar"></span>
@@ -28,11 +27,15 @@
         </ul>
 
     </nav>
-    
+
 </header>
 
 <script type="module">
     const splitPath = location.pathname.split("/").filter(Boolean);
     const page = splitPath[splitPath.length - 1];
-    document.getElementById(page).classList.add("active");
+    if (document.getElementById(page)) {
+        document.getElementById(page).classList.add("active");
+    } else {
+        console.warn(`The current page "/${page}" is not listed in main nav links`);
+    }
 </script>

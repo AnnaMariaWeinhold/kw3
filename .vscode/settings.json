@@ -1,7 +1,4 @@
 {
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.defaultFormatter": "vscode.html-language-features",
-  "[jade]": {
-    "editor.defaultFormatter": "ducfilan.pug-formatter"
-  }
 }
