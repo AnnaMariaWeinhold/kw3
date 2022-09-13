@@ -380,9 +380,10 @@ nav input[type="checkbox"]{
 
 .main-teaser__page-contact {
     background-image: url("../images/image-teaser-kontakt.jpg");
-    margin-bottom: 0!important;
+    margin-bottom: -90px;
     background-position: center;
     padding-top: 10%;
+
 }
 
 .main-teaser__page-seo{
@@ -653,6 +654,10 @@ font-weight: bold;
     text-align: center;
 }
 
+.text--grey {
+    color: #DCDCDC;
+}
+
 
 
 
@@ -803,7 +808,7 @@ font-weight: bold;
     margin-top: 12px;
 }
 
-.quote-page-seo::after {
+.quote__page-seo::after {
     content: "Nina Baumann";
 }
 
