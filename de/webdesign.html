@@ -2,13 +2,11 @@
 <html lang="de">
 
 <head>
-    <meta charset="uft-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1">
-    <title>kw³ | Webdesign</title>
-    <meta name="description"
-        content="für besseres online Auftreten mit Struktur, mehr Persönlichkeit und dem richtigen Look&Feel">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KW³ | Gutes Webdesign</title>
+    <meta name="description" content="Mit gutem Webdesign Zielgruppen überzeugen.">
     <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="fonts/" rel="stylesheet">
 
     <!-- Flavicon Icon -->
@@ -36,7 +34,12 @@
 
     <div class="wrapper">
 
-        <!-- Kopfleiste -->
+
+
+
+
+        <!-- HEADER -->
+
         <header>
 
             <nav>
@@ -48,147 +51,173 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </label>
-
                 <ul>
                     <li><a href="seo.html">SEO</a></li>
                     <li><a href="webdesign.html" class="active">Webdesign</a></li>
                     <li class="expandable-li">
                         <input type="checkbox" id="geldanlage-checkbox">
                         <label for="geldanlage-checkbox">Geldanlage</label>
-
                         <ul class="dropdown">
                             <li><a href="s&p500-strategie.html">S&P 500</a></li>
-                            <li><a href="copytrading.html">Copytrading</a></li>
+                            <li><a href="copytrading.html">Copy Trading</a></li>
                         </ul>
                     </li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="wer-wir-sind.html">Wer wir sind</a></li>
                     <li><a href="kontakt.html">Kontakt</a></li>
                 </ul>
-
             </nav>
-
         </header>
 
-        <!-- Teaser -->
 
 
-        <div id="backgroundimage-webdesign">
-            <h1 class="headingoverimage">Websites für Entrepreneurs</h1>
-            <p class="textoverimage">Du bekommst eine strukturierte und übersichtliche Website mit WOW-Effekt.
+
+
+        <!-- MAIN TEASER -->
+
+        <div class="main-teaser  main-teaser__page-webdesign">
+            <h1 class="main-teaser__heading">Websites für Entrepreneurs</h1>
+            <p class="main-teaser__text">Du bekommst eine strukturierte und übersichtliche Website mit WOW-Effekt.
                 Sie ist auf das Wesentlichste reduziert, persönlich und individuell.
                 <br>
-
                 <a href="kontakt.html" class="button">Jetzt kontaktieren</a>
             </p>
         </div>
 
 
 
-        <!-- Hauptinhalt -->
-        <section class="without-padding">
-            <div class="row grey-background">
-                <div class="wrapper-content">
-                    <div class="column half">
-                        <img class="icon" src="images/icon-sad-bear.svg" width="70" height="70">
-                        <h3>Du möchtest...</h3>
-                    </div>
 
-                    <div class="column half">
-                        <img class="icon" src="images/happy-bear.svg" width="70" height="70">
-                        <h3>Dann brauchst du...</h3>
-                    </div>
 
-                    <div class="column half">
-                        <ul>
-                            <li>...deinen Usern eine Erlebnis bieten.</li>
-                            <li>...dass deine Nutzer*innen auf deiner Website alles schnell finden.</li>
-                            <li>...mehr Kund*innen haben.</li>
-                        </ul>
-                    </div>
-
-                    <div class="column half">
-                        <ul>
-                            <li>...eine Website, auf der sich der User einfach zu Recht findet.</li>
-                            <li>...eine Website mit visuell ansprechenden Design, welches die Werte deines
-                                Unternehmens
-                                repräsentiert.</li>
-                            <li>...eine richtig gute Website.</li>
-                        </ul>
-                    </div>
-                </div>
-        </section>
-
-        <!-- problem-lösung for mobile -->
-        <section class="without-padding">
-            <div class="row grey-background-mobile">
-                <div class="wrapper-content">
-                    <div class="column half">
-                        <img class="icon" src="images/icon-sad-bear.svg" width="70" height="70">
-                        <h3 class="heading-three-center">Du möchtest...</h3>
-                        <ul>
-                            <li>...deinen Usern eine Erlebnis bieten.</li>
-                            <li>...dass deine Nutzer*innen auf deiner Website alles schnell finden.</li>
-                            <li>...mehr Kund*innen haben.</li>
-                        </ul>
-                    </div>
-
-                    <div class="column half">
-                        <img class="icon" src="images/happy-bear.svg" width="70" height="70">
-                        <h3 class="heading-three-center">Dann brauchst du...</h3>
-                        <ul>
-                            <li>...eine Website, auf der sich der User einfach zu Recht findet.</li>
-                            <li>...eine Website mit visuell ansprechenden Design, welches die Werte deines
-                                Unternehmens
-                                repräsentiert.</li>
-                            <li>...eine richtig gute Website.</li>
-                        </ul>
-                    </div>
-                </div>
-        </section>
-
-        <!-- quotation -->
+        <!-- CONTENT PROBLEMS-SOLUTIONS-->
 
         <section>
-            <blockquote class="big-quote webdesign">
+            <div class="row box--grey-background  box--desktop">
+                <div class="wrapper-content">
+                    <div class="column half">
+                        <img class="box__icon" src="images/icon-sad-bear.svg" width="70" height="70">
+                        <h3 class="box__heading">Du möchtest...</h3>
+                    </div>
+
+                    <div class="column half">
+                        <img class="box__icon" src="images/happy-bear.svg" width="70" height="70">
+                        <h3 class="box__heading">Dann brauchst du...</h3>
+                    </div>
+
+                    <div class="column half">
+                        <ul class="box__ul  box__ul--padding">
+                            <li class="box__li"><img src="images/icon-arrow.svg" width="35" height="35">...deinen Usern
+                                eine Erlebnis bieten.</li>
+                            <li class="box__li"><img src="images/icon-arrow.svg" width="35" height="35">...dass deine
+                                Nutzer*innen auf deiner Website alles schnell finden.
+                            </li>
+                            <li class="box__li"><img src="images/icon-arrow.svg" width="35" height="35">...mehr
+                                Kund*innen haben.</li>
+                        </ul>
+                    </div>
+
+                    <div class="column half">
+                        <ul class="box__ul  box__ul--padding">
+                            <li class="box__li"><img src="images/icon-arrow.svg" width="35" height="35">...eine Website,
+                                auf der sich der User einfach zu Recht findet.</li>
+                            <li class="box__li"><img src="images/icon-arrow.svg" width="35" height="35">...eine Website
+                                mit visuell ansprechenden Design, welches die Werte
+                                deines Unternehmens repräsentiert.</li>
+                            <li class="box__li"><img src="images/icon-arrow.svg" width="35" height="35">...eine richtig
+                                gute Website.</li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+
+
+
+
+        <!-- PROBLEM-SOLUTIONS MOBILE -->
+
+        <section>
+            <div class="row  box--grey-background  box--mobile">
+                <div class="wrapper-content">
+                    <div class="column half">
+                        <img class="box__icon" src="images/icon-sad-bear.svg" width="70" height="70">
+                        <h3 class="box__heading--center">Du möchtest...</h3>
+                        <ul class="box__ul">
+                            <li class="li--center">...deinen Usern eine Erlebnis bieten.</li>
+                            <li class="li--center">...dass deine Nutzer*innen auf deiner Website alles schnell finden.
+                            </li>
+                            <li class="li--center">...mehr Kund*innen haben.</li>
+                        </ul>
+                    </div>
+
+                    <div class="column half">
+                        <img class="box__icon" src="images/happy-bear.svg" width="70" height="70">
+                        <h3 class="box__heading--center">Dann brauchst du...</h3>
+                        <ul class="box__ul">
+                            <li class="li--center">...eine Website, auf der sich der User einfach zu Recht findet.</li>
+                            <li class="li--center">...eine Website mit visuell ansprechenden Design, welches die Werte
+                                deines
+                                Unternehmens
+                                repräsentiert.</li>
+                            <li class="li--center">...eine richtig gute Website.</li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+
+
+
+
+
+
+        <!-- QUOTE -->
+
+        <section>
+            <blockquote class="quote quote__page-webdesign">
                 Clear content, simple navigation and answers to customer
                 questions have the biggest impact on business value. Advanced technology matters much less.
             </blockquote>
         </section>
 
 
+
+
+
+        <!-- PRODUCT DETAILS -->
+
         <section>
-            <div class="row background">
-                <h2 class="heading-two-center">Ich biete dir</h2>
-                <div class="column fourth">
-                    <img src="images/icon-bowling.svg" class="icon" width="70" height="70">
-                    <h3 class="heading-three-center">Inhalt & SEO</h3>
-                    <p class="text-center">Was möchtest du auf deiner Website haben? Was ist wirklich wichtig? Wir
+            <div class="row  column--no-background">
+                <h2 class="column__heading">Ich biete dir</h2>
+                <div class="column  fourth  column__col">
+                    <img class="column__icon" src="images/icon-bowling.svg" width="70" height="70">
+                    <h3 class="column__subheading">Inhalt & SEO</h3>
+                    <p class="column__text">Was möchtest du auf deiner Website haben? Was ist wirklich wichtig?
+                        Wir
                         strukturieren und ordnen deine Inhalte.
                         Ich werde deine Website fit für Google und co. machen.
                 </div>
 
-                <div class="column fourth">
-                    <img src="images/icon-key.svg" class="icon" width="70" height="70">
-                    <h3 class="heading-three-center">Design</h3>
-                    <p class="text-center">Ich stelle dir ein Farbkonzept zusammen, wähle Schriften aus,
+                <div class="column  fourth  column__col">
+                    <img src="images/icon-key.svg" class="column__icon" width="70" height="70">
+                    <h3 class="column__subheading">Design</h3>
+                    <p class="column__text">Ich stelle dir ein Farbkonzept zusammen, wähle Schriften aus,
                         definiere erste Elemente, designe ein Logo, und entwerfe Moodboards und Wireframes.
                     </p>
                 </div>
 
-                <div class="column fourth">
-                    <img src="images/icon-light-bulb.svg" class="icon" width="70" height="70">
-                    <h3 class="heading-three-center">Code</h3>
-                    <p class="text-center">Ich verpacke die Designentwürfe in eine Website, welche ich mit Html, CSS
+                <div class="column  fourth  column__col">
+                    <img src="images/icon-light-bulb.svg" class="column__icon" width="70" height="70">
+                    <h3 class="column__subheading">Code</h3>
+                    <p class="column__text">Ich verpacke die Designentwürfe in eine Website, welche ich mit Html,
+                        CSS
                         und Javascript schreibe.
                         Deine Website ist von Beginn an responsive: Sie sieht auf allen Geräten klasse aus.
                     </p>
                 </div>
 
-                <div class="column fourth">
-                    <img src="images/icon-pin.svg" class="icon" width="70" height="70">
-                    <h3 class="heading-three-center">Launch</h3>
-                    <p class="text-center">Wir besprechen die Entwürfe und die Website bevor sie online geht. Wenn
+                <div class="column  fourth  column__col">
+                    <img src="images/icon-pin.svg" class="column__icon" width="70" height="70">
+                    <h3 class="column__subheading">Launch</h3>
+                    <p class="column__text">Wir besprechen die Entwürfe und die Website bevor sie online geht.
+                        Wenn
                         nötig, arbeite ich Änderungen ein.
                         Danach wird die Website gelauncht.
                     </p>
@@ -196,171 +225,188 @@
             </div>
         </section>
 
-        <section id="tools">
-            <h2>Ich erstelle deine Website mit dir gemeinsam. Ich lasse mein Designer
+
+
+
+        <!-- TOOLS -->
+
+        <section>
+            <h2 class="list__heading">Ich erstelle deine Website mit dir gemeinsam. Ich lasse mein Designer
                 Know-How einfließen
                 und du sagst mir deine Wünsche.</h2>
             <div>
-                <h3 class="heading-three-center">Tools, mit denen ich arbeite</h3>
+                <h3 class="list__subheading">Tools, mit denen ich arbeite</h3>
 
-                <div class="row">
-                    <div class="column fourth">
-                        <p class="text-big">Adobe Photoshop</p>
+                <div class="row  list__row">
+                    <div class="column fourth  column__col">
+                        <p class="list__text--bigger">Adobe Photoshop</p>
                     </div>
 
-                    <div class="column fourth">
-                        <p class="text-big">Adobe Illustrator</p>
+                    <div class="column fourth  column__col">
+                        <p class="list__text--bigger">Adobe Illustrator</p>
                     </div>
 
-                    <div class="column fourth">
-                        <p class="text-big">Html, CSS, Javascript</p>
+                    <div class="column fourth  column__col">
+                        <p class="list__text--bigger">Html, CSS, Javascript</p>
                     </div>
 
-                    <div class="column fourth">
-                        <p class="text-big">Meine Augen</p>
+                    <div class="column fourth  column__col">
+                        <p class="list__text--bigger">Meine Augen</p>
                     </div>
 
 
-                    <div class="column fourth">
-                        <p class="text-big">Stift und Papier</p>
+                    <div class="column fourth  column__col">
+                        <p class="list__text--bigger">Stift und Papier</p>
                     </div>
 
-                    <div class="column fourth">
-                        <p class="text-big">ahref</p>
+                    <div class="column fourth  column__col">
+                        <p class="list__text--bigger">ahref</p>
                     </div>
 
-                    <div class="column fourth">
-                        <p class="text-big">Ubersuggest</p>
+                    <div class="column fourth  column__col">
+                        <p class="list__text--bigger">Ubersuggest</p>
                     </div>
 
-                    <div class="column fourth">
-                        <p class="text-big">Adobe Stockfotos</p>
+                    <div class="column fourth  column__col">
+                        <p class="list__text--bigger">Adobe Stockfotos</p>
                     </div>
 
-                    <div class="column fourth">
+                    <div class="column fourth  column__col">
                         <p class="text-big">Meine Kamera</p>
                     </div>
 
-                    <div class="column fourth">
-                        <p class="text-big">Meine Empathie</p>
+                    <div class="column fourth  column__col">
+                        <p class="list__text--bigger">Meine Empathie</p>
                     </div>
 
-                    <div class="column fourth">
-                        <p class="text-big">Excel</p>
+                    <div class="column fourth  column__col">
+                        <p class="list__text--bigger">Excel</p>
                     </div>
 
-                    <div class="column fourth">
-                        <p class="text-big">Storytelling</p>
+                    <div class="column fourth  column__col">
+                        <p class="list__text--bigger">Storytelling</p>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <!-- For mobile version: tools -->
 
-        <section id="tools-list">
-            <h2 class="heading-two-center">Ich erstelle deine Website mit dir gemeinsam. Ich lasse mein Designer
-                Know-How einfließen
-                und du sagst mir deine Wünsche.</h2>
-            <h3 class="heading-three-center">Tools, mit denen ich arbeite</h3>
-            <ul>
-                <li>Adobe Photoshop</li>
-                <li>Adobe Illustrator</li>
-                <li>Adobe Stockfotos</li>
-                <li>Meine Augen</li>
-                <li>Meine Kamera</li>
-                <li>Stift und Papier</li>
-                <li>Meine Empathie</li>
-                <li>Excel</li>
-                <li>ahref</li>
-                <li>Ubersuggest</li>
-                <li>Storytelling</li>
-                <li>Html, Css, Javascript</li>
-            </ul>
+
+
+
+
+        <!-- TOOLS MOBILE -->
+
+        <section>
+            <div class="list--mobile">
+                <h2 class="list__heading">Ich erstelle deine Website mit dir gemeinsam. Ich lasse
+                    mein Designer
+                    Know-How einfließen
+                    und du sagst mir deine Wünsche.</h2>
+                <h3 class="list__subheading">Tools, mit denen ich arbeite</h3>
+                <ul>
+                    <li class="list__li">Adobe Photoshop</li>
+                    <li class="list__li">Adobe Illustrator</li>
+                    <li class="list__li">Adobe Stockfotos</li>
+                    <li class="list__li">Meine Augen</li>
+                    <li class="list__li">Meine Kamera</li>
+                    <li class="list__li">Stift und Papier</li>
+                    <li class="list__li">Meine Empathie</li>
+                    <li class="list__li">Excel</li>
+                    <li class="list__li">ahref</li>
+                    <li class="list__li">Ubersuggest</li>
+                    <li class="list__li">Storytelling</li>
+                    <li class="list__li">Html, Css, Javascript</li>
+                </ul>
+            </div>
         </section>
 
     </div>
 
 
-    <section id="karte-webdesign">
-        <div class="colored-background">
 
+
+    <!-- PRICES & PLANS -->
+
+    <section>
+        <div class="box--blue-background">
             <div class="wrapper-content">
-
-
-                <div class="row">
-                    <h2 class="heading-two-white">Eine responsive Website, die Eindruck hinterlässt,
+                <div class="row  row--no-background">
+                    <h2 class="box__heading--white">Eine responsive Website, die Eindruck hinterlässt,
                         überzeugt und Käufer*innen schafft.</h2>
-
-
-
-
-                    <div class="column full">
-                        <p class="preis">125€ - 150€ pro Seite</p>
-
-
-                        <ul>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Designentwürfe</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Definition von Farben,
+                    <div class="column  box__column--full">
+                        <h3 class="box__subheading--center">SEO Webdesign</h3>
+                        <p class="box__text--bigger">Preise werden individuell ermittelt
+                        </p>
+                        <ul class="box__ul">
+                            <li class="box__li"><img src="images/icon-arrow.svg" width="35" height="35">Designentwürfe
+                            </li>
+                            <li class="box__li"><img src="images/icon-arrow.svg" width="35" height="35">Definition von
+                                Farben,
                                 Schriften, Logo und Formen</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Erstellen von Grafiken</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Auswahl von Fotos</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Codieren</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Texten</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">SEO</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Korrekturen nach
+                            <li class="box__li"><img src="images/icon-arrow.svg" width="35" height="35">Erstellen von
+                                Grafiken</li>
+                            <li class="box__li"><img src="images/icon-arrow.svg" width="35" height="35">Auswahl
+                                von Fotos</li>
+                            <li class="box__li"><img src="images/icon-arrow.svg" width="35" height="35">Codieren
+                            </li>
+                            <li class="box__li"><img src="images/icon-arrow.svg" width="35" height="35">Texten
+                            </li>
+                            <li class="box__li"><img src="images/icon-arrow.svg" width="35" height="35">SEO</li>
+                            <li class="box__li"><img src="images/icon-arrow.svg" width="35" height="35">Korrekturen nach
                                 Feedbackrunden</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Launch</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Html-Vorlagen für
+                            <li class="box__li"><img src="images/icon-arrow.svg" width="35" height="35">Launch
+                            </li>
+                            <li class="box__li"><img src="images/icon-arrow.svg" width="35" height="35">Html-Vorlagen
+                                für
                                 Blogartikel</li>
-                            <li><img src="images/icon-arrow.svg" width="35" height="35">Nachbetreuung</li>
+                            <li class="box__li"><img src="images/icon-arrow.svg" width="35" height="35">Nachbetreuung
+                            </li>
                         </ul>
-                        <p><a href="kontakt.html" class="button-center">Ja, ich möchte mit dir reden.</a></p>
+                        <p><a href="kontakt.html" class="button  button-table">Ja, ich möchte mit dir reden.</a></p>
                     </div>
-
-
-
                 </div>
-
             </div>
         </div>
     </section>
 
 
 
-    <div class="wrapper" id="image-warum-anna">
-        <h2 class="heading-two-on-image">Warum solltest du mit mir zusammenarbeiten?</h2>
+
+
+    <!-- CONTENT WHY US -->
+
+    <div class="wrapper  secondary-teaser  secondary-teaser__image--anna">
+        <h2 class="secondary-teaser__heading">Warum solltest du mit mir zusammenarbeiten?</h2>
     </div>
 
-    <!-- Hauptinhalt - Warum wir -->
 
     <div class="wrapper-content">
         <section>
-            <div class="row background">
-                <div class="column third">
-                    <img src="images/icon-chatting.svg" class="icon" width="70" height="70">
-                    <h3 class="heading-three-center">Individuelle Beratung</h3>
-                    <p class="text-center">We need to talk ;).Dein Herzensprojekt wird zu
+            <div class="row column--no-background">
+                <div class="column third  column__col">
+                    <img src="images/icon-chatting.svg" class="column__icon" width="70" height="70">
+                    <h3 class="column__subheading">Individuelle Beratung</h3>
+                    <p class="column__text">We need to talk ;). Dein Herzensprojekt wird zu
                         meinem.
                         So bekommst du das für dich beste Ergebnis.
                     </p>
                 </div>
 
-                <div class="column third">
-                    <img src="images/icon-open-lock.svg" class="icon" width="70" height="70">
-                    <h3 class="heading-three-center">Ehrliche Kommunikation</h3>
-                    <p class="text-center">Ich werde dir nichts aufschwatzen, nur um verkaufen zu wollen.
+                <div class="column third  column__col">
+                    <img src="images/icon-open-lock.svg" class="column__icon" width="70" height="70">
+                    <h3 class="column__subheading">Ehrliche Kommunikation</h3>
+                    <p class="column__text">Ich werde dir nichts aufschwatzen, nur um verkaufen zu wollen.
                         Der Weg nach oben kann steinig sein.
                         Du brauchst langen Atem. Mit einer gutem Website und SEO baust du dir die Basis für deinen
                         Erfolg, gewinnst Kund*innen und verbreitest deine Botschaft in die Welt.
                     </p>
                 </div>
 
-                <div class="column third">
-                    <img src="images/icon-heart-amor.svg" class="icon" width="70" height="70">
-                    <h3 class="heading-three-center">Empathisch und motiviert</h3>
-                    <p class="text-center">Wenn ich dich und dein Business verstehe, entwerfe ich eine Website, die
+                <div class="column third  column__col">
+                    <img src="images/icon-heart-amor.svg" class="column__icon" width="70" height="70">
+                    <h3 class="column__subheading">Empathisch und motiviert</h3>
+                    <p class="column__text">Wenn ich dich und dein Business verstehe, entwerfe ich eine Website, die
                         ihre Funktion erfüllt:
                         Potentielle Kund*innen werden zu Käufer*innen. Ich bin hier um dir zu helfen, deine
                         Botschaft und Business visuell,
@@ -370,38 +416,32 @@
         </section>
     </div>
 
+
+
+
     <!-- last call to action -->
+
     <section>
-        <a href="kontakt.html" class="button-last">Jetzt kontaktieren</a>
+        <a href="kontakt.html" class="button  button--final">Jetzt kontaktieren</a>
     </section>
     </div>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
 
-
-    <footer id="site-footer">
+    <footer class="site-footer">
         <section>
-            <h2>KW³ Solutions</h2>
-            <p>Dein Business. Deine Freiheit.</p>
-
-
-
-            <p><a href="datenschutz.html">Datenschutz</a> | <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a> |
-                <a href="risikohinweis.html">Risikohinweis</a> | <a href="impressum.html">Impressum</a>
+            <h2 class="site-footer__heading">KW³ Solutions</h2>
+            <p class="site-footer__text--center">Dein Business. Deine Freiheit.</p>
+            <p class="site-footer__text--center">
+                <a class="site-footer__link--center" href="datenschutz.html">Datenschutz</a> |
+                <a class="site-footer__link--center" href="nutzungsbedingungen.html">Nutzungsbedingungen</a> |
+                <a class="site-footer__link--center" href="risikohinweis.html">Risikohinweis</a> |
+                <a class="site-footer__link--center" href="impressum.html">Impressum</a>
             </p>
-
-            <p>Copyright © 2022 KW³ Business Ltd</p>
+            <p class="site-footer__text--center">Copyright © 2022 KW³ Business Ltd</p>
         </section>
-
-
-
-
         </div>
     </footer>
-
-
-
-
 
 </body>
 
