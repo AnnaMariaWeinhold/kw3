@@ -36,3 +36,9 @@ fs.readdirSync(srcDir, { withFileTypes: true }).forEach((dirent) => {
     }
   }
 });
+
+fs.cp(path.join(srcDir, "styles"), path.join(outDir, "..", "styles"), { recursive: true, preserveTimestamps: true }, (err) => {
+  if (err) {
+    console.error(err);
+  }
+});
