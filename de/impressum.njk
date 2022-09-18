@@ -3,9 +3,8 @@
 
 <head>
     {% include "./components/head.njk" %}
-    <title>kw³ | Impressum</title>
-    <meta name="description" content="Impressum">
-
+    <title>KW³ | Impressum</title>
+    <meta name="description" content="Wo unsere Firma sitzt.">
 </head>
 
 <body>
@@ -13,12 +12,12 @@
     <div class="wrapper">
 
         <!-- Kopfleiste -->
-        {% include "./components/nav.njk" %}
+        {% include "./components/head.njk" %}
 
         <!-- Teaser -->
-        <div class="colored-background">
+        <div class="box--blue-background">
             <div class="wrapper-content-rights">
-                <h1>Impressum und Kontakt</h1>
+                <h1 class="box__main-heading">Impressum und Kontakt</h1>
 
             </div>
         </div>
@@ -32,9 +31,11 @@
                 <h2>Impressum</h2>
                 <p>KW³ Business Ltd <br>
                     Aphrodite Gardens Complex <br>
+                    Apartment 19 <br>
                     Lytra 5 <br>
                     8041 Paphos <br>
                     Cyprus <br>
+                    VAT-ID: CY 104 268 06P <br>
                     E-Mail: <a href=mailto:info@kw3.solutions class="link">info@kw3.solutions</a></p>
             </setion>
 
@@ -77,27 +78,17 @@
 
         </div>
 
-        <!-- Footer -->
 
-        <footer id="site-footer">
+
+
+
+        <!-- FOOTER -->
+
+        <footer class="site-footer">
             <section>
-                <h2>KW³ Solutions</h2>
-                <p>Dein Business. Deine Freiheit.</p>
-
-                <p><a href="/dedatenschutz">Datenschutz</a> | <a
-                    href="nutzungsbedingungen">Nutzungsbedingungen</a> |
-                    <a href="/deRisikohinweis">Risikohinweis</a> | <a href="/deimpressum" class="active">Impressum</a>
-                </p>
-
-                <p>Copyright © 2022 KW³ Business Ltd</p>
+                {% include "./components/footer.njk" %}
             </section>
-
-
-
-
-    </div>
-    </footer>
-
+        </footer>
 
 
 

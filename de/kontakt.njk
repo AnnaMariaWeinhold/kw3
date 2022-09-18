@@ -1,64 +1,40 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<head>
-    {% include "./components/head.njk" %}
-    <title>kw³ | Kontakt</title>
-    <meta name="description" content="Die vielseitig einsetzbare Börsenampel">
-</head>
-
-<body>
-
-    <div class="wrapper">
-
+    
+    <head>
+        {% include "./components/head.njk" %}
+        <title>KW³ | Kontakt</title>
+        <meta name="description" content="Wie du uns erreichst.">
+    </head>
+    
+    <body>
+        
+        <div class="wrapper">
+            
         <!-- Kopfleiste -->
         {% include "./components/nav.njk" %}
 
+        <!-- TEASER -->
 
-        <!-- Teaser -->
-
-
-        <div id="backgroundimage-kontakt" class="headingoverimage">
-            <h1>Schreib uns :)</h1>
-            <img src="/images/icon-arrow-point.svg" width="70">
-            <h2 class="headingoverimage"><a href=mailto:info@kw3.solutions class="link">info@kw3.solutions</a></h2>
-            <p class="textoverimage">Wir hatten keine Lust auf Kontaktformular. Schreib uns
+        <div class="main-teaser main-teaser__page-contact">
+            <h1 class="main-teaser__main-heading--blue-background">Schreib uns :)</h1>
+            <img class="main-teaser__icon" src="/images/icon-arrow-point.svg" width="40">
+            <h2><a href=mailto:info@kw3.solutions class="main-teaser__link  link">info@kw3.solutions</a>
+            </h2>
+            <p class="main-teaser__text">Wir hatten keine Lust auf ein Kontaktformular. Du auch nicht? Schreib uns
                 einfach eine E-Mail. Wir melden uns schnellst möglich bei dir. Danke für dein Interesse.
             </p>
-
-
         </div>
 
 
 
 
-        <!-- Footer -->
-
-
-        <footer id="site-footer">
+        <!-- FOOTER -->
+        <footer class="site-footer">
             <section>
-                <h2>KW³ Solutions</h2>
-                <p>Dein Business. Deine Freiheit.</p>
-
-
-
-                <p><a href="/dedatenschutz">Datenschutz</a> | <a
-                    href="nutzungsbedingungen">Nutzungsbedingungen</a> |
-                    <a href="/derisikohinweis">Risikohinweis</a> | <a href="/deimpressum">Impressum</a>
-                </p>
-
-                <p>Copyright © 2022 KW³ Business Ltd</p>
+                {% include "./components/footer.njk" %}
             </section>
-
-
-
-
-    </div>
-    </footer>
-
-
-
-
+        </footer>
 
 </body>
 

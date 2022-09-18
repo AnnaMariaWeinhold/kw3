@@ -3,27 +3,39 @@
 
 <head>
     {% include "./components/head.njk" %}
-    <title>kw³ | nutzungsbedingungen</title>
-    <meta name="description" content="Nutzungsbedingungen">
+    <title>KW³ | Nutzungsbedingungen</title>
+    <meta name="description" content="Wie wir was nutzen.">
 </head>
 
 <body>
 
     <div class="wrapper">
 
-        <!-- Kopfleiste -->
+
+
+
+
+        <!-- HEADER -->
         {% include "./components/nav.njk" %}
 
-        <!-- Teaser -->
-        <div class="colored-background">
+
+
+
+
+
+        <!-- TEASER -->
+        <div class="box--blue-background">
             <div class="wrapper-content-rights">
-                <h1>Nutzungsbedingungen</h1>
+                <h1 class="box__main-heading">Nutzungsbedingungen</h1>
 
             </div>
         </div>
 
 
-        <!-- Hauptinhalt -->
+
+
+
+        <!-- CONTENT -->
 
         <div class="wrapper-content-rights">
 
@@ -43,11 +55,12 @@
                 <p>Der Vertrag kommt zustande mit</p>
                 <p>KW³ Business LTtd <br>
                     Aphrodite Gardens Complex <br>
+                    Apartment 19 <br>
                     Lytra 5 <br>
                     8041 Paphos
                     Cyprus <br>
-                    VAT-ID....<br>
-                    E-Mail:...</p>
+                    VAT-ID: CY 104 268 06P<br>
+                    E-Mail: info@kw3.solutions</p>
 
                 <h2>3. Vertragssprache, Datenspeicherung</h2>
                 <p>Mit Verfügbarmachung der Produkte auf unseren Seiten geben wir ein verbindliches Angebot zum
@@ -81,7 +94,8 @@
                     genaue Bedingungen finden Sie jeweils beim Produkt bzw. auf besonderen Informationsseiten.</p>
 
                 <h2>7. Urheberrecht</h2>
-                <p>Alle Artikel Copyright Insider-Week.de. Alle Rechte vorbehalten. Alle Texte, Graphiken, Bilder, sowie
+                <p>Alle Artikel Copyright KW³ Business Ltd. Alle Rechte vorbehalten. Alle Texte, Graphiken, Bilder,
+                    sowie
                     sämtliche interaktiven
                     Elemente unterliegen dem Urheberrecht und anderen Gesetzen, die dem Schutz geistigen Eigentums
                     dienen. Unerlaubte Vervielfältigung,
@@ -98,29 +112,17 @@
 
         </div>
 
-        <!-- Footer -->
 
-        <footer id="site-footer">
+
+
+
+        <!-- FOOTER -->
+
+        <footer class="site-footer">
             <section>
-                <h2>KW³ Solutions</h2>
-                <p>Dein Business. Deine Freiheit.</p>
-
-                <p><a href="/dedatenschutz">Datenschutz</a> | <a href="/denutzungsbedingungen"
-                    class="active">Nutzungsbedingungen</a> |
-                    <a href="/derisikohinweis">Risikohinweis</a> | <a href="/deimpressum">Impressum</a>
-                </p>
-
-                <p>Copyright © 2022 KW³ Business Ltd</p>
+                {% include "./components/footer.njk" %}
             </section>
-
-
-
-
-    </div>
-    </footer>
-
-
-
+        </footer>
 
 
 </body>
