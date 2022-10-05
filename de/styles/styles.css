@@ -35,12 +35,13 @@
 }
 
 
-html{
+html {
     font-size:100%; /*Browserstandard 16px*/
+    scroll-behavior: smooth;
 }
 
 
-img{
+img {
     max-width:100%; /*images responsive*/
 }
 
@@ -52,7 +53,7 @@ img{
     #RESET & #BOXSIZING
 \* ---------------------------------*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     -mozbox-sizing: border-box;
@@ -68,7 +69,7 @@ img{
     #LAYOUT
 \* ---------------------------------*/
 
-body{ 
+body { 
     font-family: 'Quattrocento Sans', Helvetica, Arial, sans-serif;
     line-height: 1.5;
     color: var(--text-color);  
@@ -76,14 +77,14 @@ body{
 }
 
 
-header{
+header {
     padding: 10px 3%;
     background: #fff;
     margin-bottom: 0; 
 }
 
 
-section{
+section {
     padding: 0;
     display: block;
 }
@@ -97,26 +98,32 @@ section{
     #WRAPPER
 \* ---------------------------------*/
 
-.wrapper{
+.wrapper {
     max-width: 1600px;
     margin: 0 auto;
     overflow: hidden;
 }
 
-.wrapper-content{
+.wrapper__blog {
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 25px;
+}
+.wrapper-content {
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
 }
 
-.wrapper-content-rights{
+.wrapper-content-rights {
     max-width: 800px;
     margin: 0 auto;
     overflow: hidden;
     padding-bottom: 60px;
 }
 
-.wrapper-content-blog{
+.wrapper-content-blog {
     max-width: 730px;
     margin: 0 auto;
     overflow: hidden;
@@ -180,7 +187,8 @@ h6{
 
 p{
     font-family: 'Quattrocento Sans', Helvetica, Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.75rem;
     margin-bottom: 24px;
 }
@@ -207,6 +215,7 @@ header nav {
     top: 0;
     width: 100%;
     left: 0;
+    color:#253C78
     
 }
 
@@ -658,6 +667,17 @@ font-weight: bold;
     color: #DCDCDC;
 }
 
+.box__table {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
 
 
 
@@ -721,7 +741,9 @@ font-weight: bold;
 
 
 
-/* Werte * * * * * * * * */
+/* ---------------------------------*\
+    #WERTE
+\* ---------------------------------*/
 
 .column__col--blue {
     background: #5995ED;
@@ -754,22 +776,168 @@ font-weight: bold;
 
 
 
-
 /* ---------------------------------*\
     #BLOG
 \* ---------------------------------*/
 
-.blog__image {
-    margin-top: 20px;
+.blog__article {
+    padding: 2%;
+    margin-right: 2%;
+    width: 30.5%;
+    border: 1px solid #DCDCDC;
+    height: 400px;
 }
+
+.box--orange-background {
+    background: #ff6b35;
+    padding-bottom: 90px;
+    margin-bottom: 90px;
+}
+
+.blog__article:first-child {
+    margin-left: 2%;
+    }
 
 .blog__subheading {
     margin-top: 50px;
 }
 
+.article__main-heading {
+    color: #171614;
+    width: 90%;
+}
+
+.article__info-box {
+    margin-top: 25px;
+}
+
+.article__info-box, .article__info {
+    display: flex;
+}
+
+.article__info {
+    margin-right: 35px;
+}
+
+.article__info--icon {
+    margin-right: 15px;
+}
+
+.article__list {
+    font-size: 18px;
+    color: #171614;
+    border-left: 2px solid #ff6b35;
+    padding: 5px 0 5px 40px;
+}
+
+.article__list li {
+    padding-left: 5px;
+}
+
+.article__heading-two {
+    margin-top: 75px;
+}
+
+.article__heading-three {
+    margin-top: 50px;
+}
+
+.article__figure {
+    margin-top: 50px;
+    border-left:2px solid #ff6b35;
+    padding: 5px 0 5px 25px;
+    margin-bottom: 50px;
+}
+
+.article__caption {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-top: 10px;
+}
+
+.article__list--order {
+    list-style: decimal;
+    padding-left: 25px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    border-left:2px solid #ff6b35;
+    padding: 5px 0 5px 40px;
+}
+
+.article__list--order li {
+    padding-left: 10px;
+}
+
+.article__box {
+    margin-bottom: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 2px solid #ff6b35;
+    width:80%;
+    padding: 0 10px;
+}
+
+.article__box--info {
+    color: #fff;
+    text-align: center;
+}
+
+.article__box--info-item {
+    background-color: #ff6b35;
+    padding: 5px 10px;
+    margin-top: 80px;
+    margin-bottom: 30px;   
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; 
+}
 
 
-/* Icons * * * * * * * * */
+
+
+
+
+/* ---------------------------------*\
+    #TOC
+\* ---------------------------------*/
+
+
+.toc {
+    height: 100%;
+    width: 260px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 180px;
+    margin-left: 20px;
+    float: left;
+    position: fixed;
+    
+}
+
+.toc__link {
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    padding: 2px 0;
+    color: #171614;
+    transition: all 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+
+.toc__link:hover,
+.toc__link:focus {
+color: #ff6b35;
+}
+
+
+
+
+
+/* ---------------------------------*\
+    #ICON
+\* ---------------------------------*/
 
 .box__icon {
     margin-left: auto;
@@ -838,7 +1006,9 @@ font-weight: bold;
 
 
 
-/* Tabelle * * * * * * * * */
+/* ---------------------------------*\
+    #TABELLE
+\* ---------------------------------*/
 
 .responsive-table{
     overflow-x: auto;
@@ -1065,6 +1235,7 @@ padding: 0;
   font-weight: 400;
   border-bottom: 1px solid #e5e5e5;
 }
+
 .accordion a:hover,
 .accordion a:hover::after {
   cursor: pointer;
@@ -1084,7 +1255,7 @@ padding: 0;
     font-size: 1rem;
     color: #171614;
     text-align: center;
-  }
+}
 
 .accordion a.active::after {
   font-family: 'Ionicons';
@@ -1103,9 +1274,8 @@ padding: 0;
   -o-transition: all 0.2s ease 0.15s;
   transition: all 0.2s ease 0.15s;
 }
+
 .accordion .content p {
-  font-size: 1rem;
-  font-weight: 300;
   color: #171614;
 }
 
@@ -1118,19 +1288,25 @@ padding: 0;
   transition: all 0.35s ease 0.15s;
 }
 
-
-
-
-/* ---------------------------------*\
-        #RIGHTS
-\* ---------------------------------*/
-
-.colored-background h1{
-    color: #fff;    
+.faq__heading--center {
+    text-align: center;
 }
 
-.wrapper-content-rights h2{
-    margin-top: 90px;
+.faq__table {
+    color: #171614;
+    text-align: center;
+}
+
+.faq__table th {
+    border-bottom: 2px solid #242325; 
+}
+
+.faq__table td {
+    font-size: 16px;
+}
+
+.faq__table--notation {
+    margin-top: 10px;
 }
 
 
@@ -1204,7 +1380,7 @@ padding: 0;
 
 
 
-/* Raster * * * * * * * * */
+/* #Raster * * * * * * * * */
 
 .row{
     width: 100%;
@@ -1256,15 +1432,15 @@ width: 50%;
     #LAYOUT
 \* ---------------------------------*/
 
-.main-teaser{
+.main-teaser {
     margin-top: 60px;
 }
 
-.main-teaser__page-copy-trading{
+.main-teaser__page-copy-trading {
     background-position: center;
 }
 
-.wrapper-content{
+.wrapper-content {
     padding: 0 24px;
 }
 
@@ -1282,10 +1458,72 @@ width: 50%;
     #NAVIGATION
 \* ---------------------------------*/
 
+
+
+.toggle-button{
+    display: flex;
+}
+
+nav {
+    height: 70px;
+}
+
+nav ul {
+    height: min-content;
+    width: 100%;
+    background: #fff;
+    display: none;
+    position: absolute;
+    top: 70px;
+}
+
 nav li {
-    font-size: 18px;
-    font-size: 1.125rem;
-    padding: 10px;
+    height: min-content;
+    width: 100%;
+    padding: 0;
+}
+
+nav ul a {
+    padding: 30px 0;
+}
+
+nav li, 
+.expandable-li {
+    margin-left: 0;
+}
+
+.expandable-li {
+    display: block;
+}
+
+.expandable-li:hover .dropdown {
+    display: none;
+}
+
+.expandable-li input[type="checkbox"]:checked ~ .dropdown{
+    display: block;
+}
+
+.dropdown {
+    position: static;
+    width: 100%;
+}
+
+.dropdown li {
+    padding: 0;
+    display: block;
+    position: static;
+    background: #fff;
+}
+
+.dropdown li a {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+}
+
+#toggle-button:checked ~ ul {
+    display: block;
 }
 
 
@@ -1351,6 +1589,15 @@ h4{
 
 
 
+/* ---------------------------------*\
+        #BLOG #ARTICLE
+\* ---------------------------------*/
+
+    .article__main-heading {
+        margin-top: 120px;
+        width: 100%;
+    }
+
 
 
 
@@ -1387,8 +1634,8 @@ h4{
     #TEXT-LEGAL
 \* ---------------------------------*/
 
-.wrapper-content-rights{
-    padding: 0 24px;
+.wrapper-content-rights, .wrapper-content-blog {
+    padding: 0 25px;
 }
 
 .colored-background h1{
@@ -1431,7 +1678,7 @@ h4{
         #LAYOUT
     \* ---------------------------------*/
     
-    .wrapper-content-blog {
+    .wrapper-content-rights, .wrapper-content-blog {
         padding-left: 25px;
         padding-right: 25px;
     }
@@ -1808,6 +2055,45 @@ h4{
     \* ---------------------------------*/
 
   
+
+
+
+    /* ---------------------------------*\
+        #BLOG #ARTICLE
+    \* ---------------------------------*/
+
+    .box--orange-background {
+        margin-top: 90px;
+    }
+
+    .box__main-heading {
+    margin-top: 90px;
+
+    }
+    .blog__article {
+        width: 100%;
+        padding: 5% 10%;
+        margin-bottom: 40px;
+        height: fit-content;
+    }
+
+
+    .article__main-heading {
+        margin-top: 120px;
+        width: 100%;
+    }
+
+    
+
+   /* ---------------------------------*\
+    #TOC
+\* ---------------------------------*/
+
+
+.toc {
+    display: none;
+    
+}
 
 
 
