@@ -30,13 +30,14 @@
     <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <script src="scripts/echarts.js"></script>
+    <script src="../../scripts/echarts.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
     <script src="scripts/function.js"></script>
+
 
 
     <div class="wrapper">
@@ -78,9 +79,9 @@
 
 
         <!-- TEASER -->
-        <div class="toc">
+        <div id="toc" class="toc">
             <h6>Inhaltsverzeichnis</h6>
-            <ol class="toc__nav">
+            <ul class="toc__nav">
                 <li><a href="#point01" class="toc__link">1. Arten der Börsenampel</a></li>
                 <li><a href="#point02" class="toc__link">2. Der Nutzen eines Börsenbarometers</a></li>
                 <li><a href="#point03" class="toc__link">3. Die KW³ Börsenampel</a></li>
@@ -99,7 +100,11 @@
                 <li><a href="#point13" class="toc__link">7. Börsenampel Indikator in TradingView selbst berechnen</a>
                 </li>
                 <li><a href="#point14" class="toc__link">8. Zusammenfassung</a></li>
-            </ol>
+            </ul>
+            <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#ff6b35" stroke-width="2" fill="transparent" stroke-dasharray="0, 0, 0, 1000"
+                    stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+            </svg>
         </div>
 
         <div class="wrapper-content-blog">
@@ -151,7 +156,7 @@
             <!-- Hauptinhalt -->
 
             <section>
-                <h2 class="article__heading-two" id="point01">Arten der Börsenampel</h2>
+                <h2 class="article__heading-two  visible" id="point01">Arten der Börsenampel</h2>
                 <p>Alexander Elder hat ein <a class="link"
                         href="https://www.erfolgreiche-trader-strategien.de/trading/trading-doktor-alexander-elder"
                         target="_blank">Impulssystem</a> entwickelt, welches als Börsenampel bzw. Börsenbarometer
@@ -177,8 +182,10 @@
                     Markt
                     in eine bestimmte Richtung läuft. Da können auch Fehlsignale dabei sein, aber diese werden durch
                     verschiedene Schritte der Börsenampel minimiert und durch Stopp Orders abgesichert.</p>
+            </section>
 
 
+            <section>
                 <h2 class="article__heading-two" id="point02">Der Nutzen eines Börsenbarometers</h2>
                 <p>Eine Börsenampel ermöglicht eine hohe Rendite mit geringem Zeitaufwand. Sie warnt vor größeren
                     Marktkorrekturen oder Crashs. Mit einem Börsenbarometer ist es möglich, rechtzeitig wieder in den
@@ -206,8 +213,10 @@
                     wenn dieser schon längst da ist. Daher können Nachrichten nicht als Börsenampel oder
                     Richtungsgeber
                     genutzt werden.</p>
+            </section>
 
 
+            <section>
                 <h2 class="article__heading-two" id="point03">Die KW³ Börsenampel</h2>
                 <p>Ich habe eine eigene Börsenampel entwickelt, da mir bei anderen Börsenampeln etwas gefehlt hat.
                     Es
@@ -226,9 +235,9 @@
                     <li>Divergenz</li>
                     <li>Spread der VIX Futures</li>
                 </ul>
+            </section>
 
-
-
+            <section>
                 <h3 class="article__heading-three" id="point04">COT Daten</h3>
                 <p>Die COT Daten aus dem Commitment of Traders Report (COT Report) werden jede Woche Freitag nach
                     Börsenschluss von der Commodity Futures Trading Commission (CFTC) im Tabellenformat
@@ -314,8 +323,10 @@
                         Ausstiegssignal gewertet, da die COT Daten hierfür nicht der richtige Indikator sind.
                     </figcaption>
                 </figure>
+            </section>
 
 
+            <section>
                 <h3 class="article__heading-three" id="point05">52 Moving Average</h3>
                 <p>Ich schaue mir an, ob sich der Kurs oberhalb oder unterhalb des 52 Moving Average befindet. Der
                     52
@@ -329,8 +340,10 @@
                     Börsencrashs angezeigt hat. Aber vor allem nutze ich diesen Indikator, um die Trendstärke in
                     Rally
                     Phasen sichtbar zu machen.</p>
+            </section>
 
 
+            <section>
                 <h3 class="article__heading-three" id="point06">Trendanalyse</h3>
                 <p>Die Analyse des Trends erfolgt auf Wochen- und Tagesbasis und dient ebenfalls der
                     Markteinordnung.
@@ -340,8 +353,10 @@
                     den Trend nach Markttechnik, wie er in dem Buch „Das große Buch der Markttechnik“ von Michael
                     Voigt
                     beschrieben ist.</p>
+            </section>
 
 
+            <section>
                 <h3 class="article__heading-three" id="point07">Momentum Indikator</h3>
                 <p>Es gibt ganze Trading Strategien, die sich nur auf das Momentum konzentrieren. In der KW³
                     Börsenampel
@@ -353,8 +368,10 @@
                     vermehren. Ich benutze einen Momentum Indikator, der auf dem PercentR (%R) Indikator von Larry
                     Williams
                     basiert. </p>
+            </section>
 
 
+            <section>
                 <h3 class="article__heading-three" id="point08">Divergenz</h3>
                 <p>Ich analysiere die Divergenz, um den richtigen Zeitpunkt für den Einstieg in den Markt zu finden.
                     Quasi
@@ -391,8 +408,10 @@
                     schaue ich nicht mehr auf die Divergenz, sondern analysiere die Spreads auf die VIX Futures, um
                     den
                     Ausstieg zu timen.</p>
+            </section>
 
 
+            <section>
                 <h3 class="article__heading-three" id="point09">Spread der VIX Futures als Crash Indikator</h3>
                 <p>Seit dem 26. März 2007 veröffentlicht die Seite <a class="link" href="http://www.vixcentral.com/"
                         target="_blank">VIX
@@ -446,8 +465,10 @@
                 </figure>
                 <p>Nach meiner Börsenampel und dem Warnsignal vom 03.12.2021 habe ich meine Position komplett am
                     19.01.2021 geschlossen. Nur 6 % unter dem Allzeithoch des S&P 500.</p>
+            </section>
 
 
+            <section>
                 <h2 class="article__heading-two" id="point10">Warum erreicht meine Börsenampel eine bessere
                     Performance
                     als
@@ -464,8 +485,10 @@
                     Absicherung werden unangenehm negative Überraschungen unter der Woche vermieden. Sobald es – wie
                     im Jahr 2020 im Corona Crash – unter der Woche deutlich nach unten geht, wird die Position per
                     Stopp Order aufgelöst.</p>
+            </section>
 
 
+            <section>
                 <h2 class="article__heading-two" id="point11">Kann ich mein Geld in einem Börsenampel Fond anlegen?
                 </h2>
                 <p>Solltest du Interesse haben dein Geld in einen Börsenampel Fond oder Börsenampel Fond Global zu
@@ -583,8 +606,10 @@
                         myChart.setOption(option);
                     </script>
                 </figure>
+            </section>
 
 
+            <section>
                 <h2 class="article__heading-two" id="point12">Warum ist meine Börsenampel so wie sie ist?</h2>
                 <p>Es ist wichtig, viele verschiedene Bestätigungen für seine Handels- oder
                     Investitionsentscheidungen
@@ -618,8 +643,10 @@
                     müssen
                     die
                     Gewinner größer sein als die Verluste, um erfolgreich zu sein.</p>
+            </section>
 
 
+            <section>
                 <h2 class="article__heading-two" id="point13">Börsenampel Indikator in TradingView selbst berechnen
                 </h2>
                 <p>In dem Börsentool TradingView kann jeder, der ein Konto hat, seine eigenen Indikatoren
@@ -632,8 +659,10 @@
                     Börsenampel
                     zu programmieren, kontaktiere mich sehr gerne. Ich unterstütze dich mit all meinem Wissen. 😊
                 </p>
+            </section>
 
 
+            <section>
                 <h2 class="article__heading-two" id="point14">Zusammenfassung</h2>
                 <p>Wenn du die KW³ Börsenampel nutzt, schlägst du den Markt, da:
                 </p>
@@ -657,12 +686,150 @@
                         href=mailto:info@kw3.solutions class="link">info@kw3.solutions</a>. Ich
                     freue
                     mich auf deine Rückmeldung.</p>
-
+            </section>
         </div>
     </div>
 
+    <script type="text/javascript">
+        // Code for TOC
 
+        var toc = document.querySelector('.toc');
+        var tocPath = document.querySelector('.toc-marker path');
+        var tocItems;
 
+        // Factor of screen size that the element must cross
+        // before it's considered visible
+        var TOP_MARGIN = 0.1,
+            BOTTOM_MARGIN = 0.2;
+
+        var pathLength;
+
+        var lastPathStart,
+            lastPathEnd;
+
+        window.addEventListener('resize', drawPath, false);
+        window.addEventListener('scroll', sync, false);
+
+        drawPath();
+
+        function drawPath() {
+
+            tocItems = [].slice.call(toc.querySelectorAll('li'));
+
+            // Cache element references and measurements
+            tocItems = tocItems.map(function (item) {
+                var anchor = item.querySelector('a');
+                var target = document.getElementById(anchor.getAttribute('href').slice(1));
+
+                return {
+                    listItem: item,
+                    anchor: anchor,
+                    target: target
+                };
+            });
+
+            // Remove missing targets
+            tocItems = tocItems.filter(function (item) {
+                return !!item.target;
+            });
+
+            var path = [];
+            var pathIndent;
+
+            tocItems.forEach(function (item, i) {
+
+                var x = item.anchor.offsetLeft - 5,
+                    y = item.anchor.offsetTop,
+                    height = item.anchor.offsetHeight;
+
+                if (i === 0) {
+                    path.push('M', x, y, 'L', x, y + height);
+                    item.pathStart = 0;
+                }
+                else {
+                    // Draw an additional line when there's a change in
+                    // indent levels
+                    if (pathIndent !== x) path.push('L', pathIndent, y);
+
+                    path.push('L', x, y);
+
+                    // Set the current path so that we can measure it
+                    tocPath.setAttribute('d', path.join(' '));
+                    item.pathStart = tocPath.getTotalLength() || 0;
+
+                    path.push('L', x, y + height);
+                }
+
+                pathIndent = x;
+
+                tocPath.setAttribute('d', path.join(' '));
+                item.pathEnd = tocPath.getTotalLength();
+
+            });
+
+            pathLength = tocPath.getTotalLength();
+
+            sync();
+
+        }
+
+        function sync() {
+
+            var windowHeight = window.innerHeight;
+
+            var pathStart = pathLength,
+                pathEnd = 0;
+
+            var visibleItems = 0;
+
+            tocItems.forEach(function (item) {
+
+                var targetBounds = item.target.getBoundingClientRect();
+
+                if (targetBounds.bottom > windowHeight * TOP_MARGIN && targetBounds.top < windowHeight * (1 - BOTTOM_MARGIN)) {
+                    pathStart = Math.min(item.pathStart, pathStart);
+                    pathEnd = Math.max(item.pathEnd, pathEnd);
+
+                    visibleItems += 1;
+
+                    item.listItem.classList.add('visible');
+                }
+                else {
+                    item.listItem.classList.remove('visible');
+                }
+
+            });
+
+            // Specify the visible path or hide the path altogether
+            // if there are no visible items
+            if (visibleItems > 0 && pathStart < pathEnd) {
+                if (pathStart !== lastPathStart || pathEnd !== lastPathEnd) {
+                    tocPath.setAttribute('stroke-dashoffset', '1');
+                    tocPath.setAttribute('stroke-dasharray', '1, ' + pathStart + ', ' + (pathEnd - pathStart) + ', ' + pathLength);
+                    tocPath.setAttribute('opacity', 1);
+                }
+            }
+            else {
+                tocPath.setAttribute('opacity', 0);
+            }
+
+            lastPathStart = pathStart;
+            lastPathEnd = pathEnd;
+
+        }
+
+        // Show TOC when scroll down
+        window.addEventListener("scroll", function () { showFunction() });
+
+        function showFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                document.getElementById("toc").style.display = "block";
+            } else {
+                document.getElementById("toc").style.display = "none";
+            }
+        }
+
+    </script>
 
 
 
