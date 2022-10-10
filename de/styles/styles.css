@@ -1025,10 +1025,12 @@ padding: 8%;
 
   .thumbnails li {
       flex: auto; 
+      list-style: none;
     }
   
     .thumbnails a {
       display: block;
+      cursor: pointer;
     }
     
    .thumbnails img {
@@ -1061,30 +1063,22 @@ padding: 8%;
   
   .slides li:target {
     z-index: 3;
-    -webkit-animation: slide 1s 1;
+    animation: fade-in 2s 1;
   }
   
   .slides li:not(:target) {
-    -webkit-animation: hidden 1s 1;
+    opacity: 0;
   }
   
-  @keyframes slide {
+  @keyframes fade-in {
     0% {
-      transform: translateY(-100%);
+      opacity: 0;
     }
     100% {
-      transform: translateY(0%);
+      opacity: 1;
     }
   }
-  
-  @keyframes hidden {
-    0% {
-      z-index: 2;
-    }
-    100% {
-      z-index: 2;
-    }
-  }
+
 
 
 
