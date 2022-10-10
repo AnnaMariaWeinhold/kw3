@@ -6,8 +6,24 @@
 .chart__p {
   text-transform: uppercase;
   font-weight: bold;
+  margin-right: 10px;
 }
 
+.chart__input {
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+.chart__input:focus {
+  outline: 1px solid #ff6b35;
+  outline-offset: 2px;
+}
+
+#chart-controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
 
 
 #chart-dialog {
@@ -52,8 +68,7 @@
   z-index: -1;
 }
 
-#interactive-chart,
-#chart-controls {
+#interactive-chart {
   margin: 0 12px;
 }
 

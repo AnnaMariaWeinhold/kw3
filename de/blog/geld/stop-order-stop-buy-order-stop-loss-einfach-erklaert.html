@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KW³ | Wie funktioniert eine Börsenampel?</title>
+    <meta name="description"
+        content="Du legst dein Geld selbst an. Weißt aber nicht wann du investieren sollst. Es gibt Börsenampeln dir dabei helfen. Damit schlägst du den Markt.">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <link href="fonts" rel="stylesheet">
+
+
+    <!-- Flavicon Icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="../../scripts/echarts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <script src="scripts/function.js"></script>
+
+
+
+    <div class="wrapper">
+
+
+        <!-- HEADER -->
+
+        <header>
+            <nav>
+                <a href="../../index" class="logo"><img src="images/logo-test.png" width="100" height=""
+                        alt="Logo KW³ solutions"></a>
+                <input type="checkbox" id="toggle-button">
+                <label for="toggle-button" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+                <ul>
+                    <li><a href="../../seo">SEO</a></li>
+                    <li><a href="../../webdesign">Webdesign</a></li>
+                    <li class="expandable-li">
+                        <input type="checkbox" id="geldanlage-checkbox">
+                        <label for="geldanlage-checkbox">Geldanlage</label>
+                        <ul class="dropdown">
+                            <li><a href="../../investieren">Investieren</a></li>
+                            <li><a href="../../copytrading">Copy Trading</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../alle-artikel">Blog</a></li>
+                    <li><a href="../../wer-wir-sind">Wer wir sind</a></li>
+                    <li><a href="../../kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+
+
+
+        <!-- TEASER -->
+        <div id="toc" class="toc">
+            <h6>Inhaltsverzeichnis</h6>
+            <ul class="toc__nav">
+                <li><a href="#Stop Order Intro" class="toc__link">Stop Ordertypen</a></li>
+                <li><a href="#point02" class="toc__link">2. Was ist eien Stop Order?</a></li>
+                <li><a href="#point03" class="toc__link">3. Was ist eine Stop Buy Order?</a></li>
+                <li><a href="#point04" class="toc__link">4. Was ist eine Stop Loss Order bzw. eine Stop Sell Order?</a>
+                </li>
+                <li><a href="#point05" class="toc__link">5.Wann solltest du einen Stop Loss benutzen?</a></li>
+                <li><a href="#point06" class="toc__link">6. Was ist der beste Stop Loss?</a></li>
+                <li><a href="#point07" class="toc__link">7. Was sind die Nachteile einer Stop Order?</a></li>
+                <li><a href="#point08" class="toc__link">8. Wie kannst du Slippage umgehen?</a></li>
+                <li><a href="#point09" class="toc__link">9. Wie platzierst du eine Stop Order beim Broker?</a></li>
+                <li><a href="#point10" class="toc__link"></a>10. Unterschied Limit Order, Stop Order und Stop Limit
+                    Order</li>
+            </ul>
+            <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#ff6b35" stroke-width="2" fill="transparent" stroke-dasharray="0, 0, 0, 1000"
+                    stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+            </svg>
+        </div>
+
+        <div class="wrapper-content-blog">
+            <h1 class="article__main-heading">Stop Order, Stop Buy Order und Stop Loss an Beispielen erklärt</h1>
+            <div class="article__info-box">
+                <div class="article__info">
+                    <img class="article__info--icon" src="images/icon-author.svg" alt="Autor" width="30" height="30">
+                    <p>Philipp Kozalla</p>
+                </div>
+                <div class="article__info">
+                    <img class="article__info--icon" src="images/icon-published.svg" alt="Veröffentlichung" width="30"
+                        height="30">
+                    <p>??.10.2022</p>
+                </div>
+                <div class="animated_share">
+                    <div class="animated_share_btn">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://kw3.solutions/de/blog/geld/stop-order-stop-buy-order-stop-loss-einfach-erklaert"
+                            target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fmasterblogging.com%2Fbest-travel-blogs%2F&media=https://kw3.solutions/de/blog/geld/stop-order-stop-buy-order-stop-loss-einfach-erklaert"
+                            target="_blank"><i class="fa fa-pinterest"></i></a>
+                        <a
+                            href="https://twitter.com/share?url=https://kw3.solutions/de/blog/geld/stop-order-stop-buy-order-stop-loss-einfach-erklaert"><i
+                                class="fa fa-twitter" target="_blank"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p>Du möchtest wissen, was genau eine Stop Order ist. Du bist dir unsicher, wie und wann du sie einsetzt.
+                Eine Stop Order ermöglicht es dir, dein Kapital zu schützen und langfristig zu vermehren. Also wäre es
+                gut, wenn du eine Stop Order sicher anwenden könntest, oder?</p>
+
+            <figure class="article__figure">
+                <img src="#" alt="#" width="730" height="">
+            </figure>
+
+
+
+            <!-- Hauptinhalt -->
+
+            <section>
+                <h2 class="article__heading-two  visible" id="Stop Order Intro">Stop Ordertypen</h2>
+                <p>Die Stop Order wird in Stop Buy Order und Stop Loss Order bzw. Stop Sell Order unterteilt. Je
+                    nachdem, ob du kaufen oder verkaufen möchtest, wird die ein oder andere ausgeführt.
+                </p>
+                <p>Andere Orders wie die Limit Order, Stop Limit Order oder die Trailing Stop Order sind eigenständige
+                    Ordertypen und werden in anderen Artikeln detailliert besprochen.</p>
+            </section>
+
+
+            <section>
+                <h2 class="article__heading-two" id="point02">Was ist eine Stop Order?</h2>
+                <p>Eine Stop Order ist eine Order, welche zu einem bestimmten Preis als Market Order – also zum
+                    nächstmöglichen Zeitpunkt – ausgeführt wird.
+                </p>
+                <p>Diesen Ordertyp kannst du auf jedes Finanzinstrument (Aktien, Futures, CFD’s, ETFs etc.) anwenden.
+                    Eine Stop Order wird als Kauf- oder Verkaufsorder, also als Stop Buy Order oder Stop Loss Order,
+                    platziert.</p>
+                <p>Du kannst sie einsetzen, wenn du deine Position absichern möchtest. In diesem Fall schließt deine
+                    Position mit einer Stop Sell oder Stop Loss Order (Verkaufsorder). Oder du setzt sie ein, wenn du in
+                    Trendrichtung eine Position eröffnest. Dann bedienst dich einer Stop Buy Order (Kauforder).</p>
+                <p>In diesem Artikel erfährst du, wie du die Stop Ordertypen bei steigenden Kursen anwendest. Es gibt
+                    bei Futures und Optionen die Möglichkeit, auch fallende Kurse zu handeln.</p>
+            </section>
+
+
+            <section>
+                <h2 class="article__heading-two" id="point03">Was ist eine Stop Buy Order?</h2>
+                <figure class="article__figure"><img src="images/image-article-stop-buy-order.svg"
+                        alt="grafische Stop Buy Order Erklärung" width="730"></figure>
+                <p>Eine Stop Buy Order (Stop Order Kauf) ermöglicht es dir eine Position mit dem Trend zu eröffnen. Du
+                    benutzt sie also beim Kaufen. Wenn du mit einer Stop Buy Order kaufst, legst du einen bestimmten
+                    Stop Kurs fest.</p>
+                <p>Dieser muss über dem aktuellen Preis liegen. Wenn dein definierter Stop Kurs (Stop Price) erreicht
+                    wird, wird die Position eröffnet.</p>
+                <figure class="article__figure">
+                    <img src="images/image-article-stop-sell-order-beispiel.jpg"
+                        alt="Stop Order Kauf Beispiel mit Apple Aktien" width="730">
+                    <figcaption class="article__caption">Ein Stop Buy Order Beispiel. Die Apple Aktie steigt. Am
+                        20.06.2022 entscheidest du dich, Apple Aktien
+                        zu kaufen. Du möchtest deine Position mit einer Stop Order Kauf eröffnen. Den Stop Kurs
+                        definierst
+                        du auf Basis des vorherigen Hochs, welches am 01. Juni 2022 entstanden ist und einem Preis von
+                        151,52 $ entspricht. Wenn der Kurs von 151,52 $ überschritten wird, wird die Order automatisch
+                        in eine Market Order
+                        umgewandelt und zum nächstmöglichen Zeitpunkt ausgeführt. Das ist am 18. Juli 2022 der Fall. Da
+                        alles von selbst passiert, ersparst du dir das tägliche Screenen der Kurse.
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h3 class="article__heading-three" id="point04">Was ist eine Stop Loss Order bzw. eine Stop Sell Order?
+                </h3>
+                <figure class="article__figure"><img src="images/image-article-stop-loss-order.svg"
+                        alt="grafische Stop Loss Order Erklärung" width="730"></figure>
+                <p>Im Trading Slang spricht man eigentlich nur von Stop Loss. Eine typische Frage eines Traders wäre „Wo
+                    liegt dein Stop Loss?“. Die Antwort eines anderen Traders könnte sein „Am letzten Tief“.
+                </p>
+                <p>Ein Stop Loss schützt dein Konto vor unbegrenzten Verlusten bzw. sichert Gewinne bevor die Kurse in
+                    den Keller rasen ab.</p>
+                <p>Du verwendest eine Stop Loss Order (Stop Order Verkauf) also beim Verkaufen. Der Stop Kurs, den du
+                    definierst, muss unter dem aktuellen Kurs liegen. Den Stop kannst du zum Beispiel 10 % unter deinem
+                    Kaufpreis setzen, sodass sich das Risiko auf 10 % begrenzt.
+                </p>
+                <p>Wenn der gewünschte Stop Kurs erreicht wird, wird deine Position geschlossen. Falls der Absturz der
+                    Kurse deinen Stop Kurs nicht überschreiten sollte, wird die Stop Loss Order nicht ausgeführt. Dann
+                    kannst du sie auf das neu entstandene Tief verschieben.</p>
+                <p>Ein Stop Order Verkauf funktioniert besonders gut in Trendmärkten. Du kannst damit deine Gewinne
+                    frühzeitig absichern, ohne dass du täglich die Kurse verfolgen musst.</p>
+                <p>Wenn du also offene Positionen hast, checkst du diese zweimal im Monat und platzierst eine Stop Loss
+                    Order. Und du nimmst die Gewinne mit.</p>
+                <figure class="article__figure">
+                    <img src="images/image-article-stop-sell-order-beispiel.jpg"
+                        alt="Stop Order Verkauf Beispiel mit Apple Aktien" width="730">
+                    <figcaption class="article__caption">Ein Stop Loss Order Beispiel. Die Apple Aktie fällt. Und du
+                        willst deine Gewinne sichern. Du
+                        verkaufst mit einer Stop Loss Order, welche du auf Basis des vorherigen Tiefs definierst. Der
+                        Stop
+                        Kurs entspricht wie die Grafik zeigt XXX $.
+                    </figcaption>
+                </figure>
+
+
+
+                <section>
+                    <h2 class="article__heading-three" id="point05">Wann solltest du einen Stop Loss benutzen?</h2>
+                    <p>Meiner Meinung nach, immer! Abhängig von deiner Strategie platzierst du den Stop Loss am besten
+                        am letzten oder vorletzten Tief. </p>
+                </section>
+
+
+                <section>
+                    <h2 class="article__heading-three" id="point06">Was ist der beste Stop Loss?</h2>
+                    <p>Ich denke, dass es am besten ist, nach Markttechnik den Stop Loss zu setzen. Hierfür verwendest
+                        du das letzte oder vorletzte Tief. Wenn es für dich zu schwer ist, die Hoch- und Tiefpunkte zu
+                        erkennen, kannst du den Indikator von Larry William PercentR (%R) benutzen. </p>
+                </section>
+
+
+                <section>
+                    <h2 class="article__heading-three" id="point07">Was sind die Nachteile einer Stop Order?</h2>
+                    <p>Ein Schwachpunkt der Stop Order ist, dass sie in eine Market Order umgewandelt wird. Eine Market
+                        Order wird zum nächstmöglichen Kurs ausgeführt. Der nächstmögliche Kurs kann jedoch anders
+                        aussehen als du erwartest. </p>
+                    <p>Die Börse ist wie ein Marktplatz. Sie bringt die Käufer und Verkäufer zusammen. Wenn es zu einem
+                        bestimmten Preis keine Käufer oder Verkäufer gibt, kommt kein Handel zustande bzw. muss zu einem
+                        niedrigeren Preis verkauft werden, um die Ware loszuwerden.</p>
+                    <p>Übertragen auf die Börse heißt das: Gibt es kein Ordervolumen (keine Käufer) zu deinem Stop Kurs
+                        (der Preis, für welchen du deine Aktien verkaufen willst), kommt es zu einer Kurslücke bzw.
+                        Slippage im Verlaufe des Tages. Deine Order wird deutlich schlechter ausgeführt als du
+                        eigentlich möchtest. Du verkaufst zu einem niedrigeren Preis.</p>
+                    <p>Das Gleiche tritt auf, wenn dein angegebener Stop Kurs nicht direkt erreicht wird, sondern mit
+                        einer Kurslücke über Nacht übersprungen wird.</p>
+                    <figure class="article__figure">
+                        <img src="images/image-article-slippage-beispiel.jpg"
+                            alt="Stop Order Verkauf Beispiel mit Apple Aktien" width="730">
+                        <figcaption class="article__caption">Noch einmal das Beispiel mit der Apple Aktie. Du hast
+                            deine Stop Loss Order am Tief der
+                            Tageskerze des 26. August bei einem Kurs von 163,64 $ gesetzt. Am nächsten Tag eröffnet der
+                            Markt bei einem Kurs von 161,07 $ und deine Order wird zu dem Eröffnungskurs ausgeführt. Das
+                            ist
+                            2,57 $ tiefer, als du eigentlich geplant hattest und deine Order wurde so mit Slippage
+                            ausgeführt.
+                        </figcaption>
+                    </figure>
+                </section>
+
+
+                <section>
+                    <h2 class="article__heading-three" id="point07">Wie kannst du die Nachteile einer Stop Order
+                        umgehen?</h2>
+                    <p>Den Nachteil der schlechteren Orderausführung (Slippage) bei einer Stop Order kannst du mit einer
+                        Stop Limit Order umgehen. Dies funktioniert natürlich nur, solange auch Volumen bei deinem Limit
+                        Kurs vorhanden ist. Sollte kein Handelsvolumen bei deinem Limit Kurs vorhanden sein, oder dein
+                        Limit Kurs wird übersprungen, wird diese Order nicht ausgeführt und du behältst deine Position.
+                    </p>
+                    <div class="article__box--info-item">
+                        <h6 class="article__box--info">Wichtiger Hinweis</h6>
+                    </div>
+                    <div class="article__box">
+                        <h4>Stop Limit Order</h4>
+                        <p>Es kann passieren, dass deine Stop Limit Order nicht ausgeführt wird. Daher
+                            empfehle
+                            und verwende ich die Stop Limit Order niemals, um eine Position zu schließen! Ich selbst
+                            verwende sie nur, um eine Position zu eröffnen.</p>
+                        </p>
+                    </div>
+                    <figure class="article__figure">
+                        <img src="images/image-article-slippage-vermeiden-beispiel.jpg"
+                            alt="Slippage vermeiden am Beispiel von Apple Aktien" width="730">
+                        <figcaption class="article__caption">#
+                        </figcaption>
+                    </figure>
+                </section>
+
+
+                <section>
+                    <h2 class="article__heading-three" id="point08">Wie platzierst du eine Stop Order beim Broker?</h2>
+                    <p>Bei den meisten Brokern wählst du zuerst aus, ob du eine Position Verkaufen oder Kaufen möchtest.
+                        Danach wählst du den Ordertypen – beispielsweise die Stop Order – aus.</p>
+                    <p>Bei den meisten Brokern gehst du folgendermaßen bei der Platzierung deiner Order vor:
+                    </p>
+                    <ul class="article__list">
+                        <li>1. Du wählst ein Handelsprodukt, beispielsweise die Apple Aktie oder einen S&P 500 ETF, aus.
+                        </li>
+                        <li>2. Du gibst an, ob du kaufst oder verkaufst.</li>
+                        <li>3. Du wählst Stop Order als Ordertyp aus.</li>
+                        <li>4. Du legst Preis, Anzahl sowie Ordergültigkeit fest.</li>
+                        <li>5. Du klickst „Order platzieren“ bzw. „Order abschließen“.</li>
+                    </ul>
+                    <div class="article__box--info-item">
+                        <h6 class="article__box--info">Wichtiger Hinweis</h6>
+                    </div>
+                    <div class="article__box">
+                        <h4>Stop Order bei einem Broker</h4>
+                        <p>Bei den meisten Brokern wird nicht angezeigt, ob es sich um eine Stop Buy oder Stop Loss
+                            Order handelt, da dies schon mit der vorherigen Auswahl (Kaufen oder Verkaufen) definiert
+                            wurde.</p>
+                        <p>Mit der Auswahl 1. Verkaufen und 2. Stop Order ergibt sich die Stop Loss oder Stop Sell
+                            Order. Mit der Auswahl 1. Kaufen und 2. Stop Order ergibt sich die Stop Buy Order.</p>
+                        <p>
+                            Korrekter ist daher die Schreibweise, die aus dem Englischen kommt:
+                            Stop Buy Order = Buy Stop Order
+                            Stop Sell Order oder Stop Loss Order = Sell Stop Order
+                        </p>
+                    </div>
+                    <div class="quiz">
+                        <div class="quiz-step-option  quiz-step-option-cards">
+                            <label class="quiz-card">
+                                <input class="quiz-radio" type="checkbox" name="broker" value="Interactive Broker">
+                                <span class="quiz-card-text">Interactive Broker</span>
+                            </label>
+                            <label class="quiz-card">
+                                <input class="quiz-radio" type="checkbox" name="broker" value="Robinhood">
+                                <span class="quiz-card-text">Robinhood</span>
+                            </label>
+                            <label class="quiz-card">
+                                <input class="quiz-radio" type="checkbox" name="broker" value="Comdirect">
+                                <span class="quiz-card-text">Comdirect</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <a href="#comdirect" class="button">Comdirect</a>
+
+                    <a href="#interactive-brokers" class="button">Interactive Brokers</a>
+
+                    <div id="comdirect"><img src="images/Comdirect_Logo.png"></div>
+                    <div id="interactive-brokers"><img src="images/Interactive Brokers_logo.jpg"></div>
+                </section>
+
+
+
+
+
+
+                <!-- SLIDER MIT NAVIGATION -->
+
+                <div class="container">
+                    <ul class="slides">
+                        <li id="slide1"><img src="images/slide-interactive-brokers-stratscreen.jpg" alt="" /></li>
+                        <li id="slide2"><img src="images/slide-interactive-brokers-kaufsorder.jpg" alt="" /></li>
+                        <li id="slide3"><img src="images/slide-interactive-brokers-kauforder-stop-order.jpg" alt="" />
+                        </li>
+                    </ul>
+
+                    <ul class="thumbnails">
+                        <li>
+                            <a href="#slide1"><img src="images/slide-interactive-brokers-stratscreen.jpg"></a>
+                        </li>
+                        <li>
+                            <a href="#slide2"><img src="images/slide-interactive-brokers-kaufsorder.jpg"></a>
+                        </li>
+                        <li>
+                            <a href="#slide3"><img src="images/slide-interactive-brokers-kauforder-stop-order.jpg"></a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+
+
+
+
+                <section>
+                    <h2 class="article__heading-three" id="point09">Unterschied Limit Order, Stop Order und Stop Limit
+                        Order</h2>
+                    <p>Stop Order und Limit Order sind zwei unterschiedliche Ordertypen. Stop Limit Order ist eine
+                        Kombination aus Stop Order und Limit Order und kann bei deinem Broker ebenfalls als Ordertyp
+                        ausgewählt werden.</p>
+                    <diV class="responsive table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Stop Order</th>
+                                    <th>Limit Order</th>
+                                    <th>Stop Limit Order</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Ein Kurswert (Stop)</td>
+                                    <td>Ein Kurswert (Limit)</td>
+                                </tr>
+                                <tr>
+                                    <td>Kaufen: Stop Kurs oberhalb des aktuellen Kurswerts.</td>
+                                    <td>Kaufen: Limit Kurs unterhalb des aktuellen Kurswerts</td>
+                                </tr>
+                                <tr>
+                                    <td>Verkaufen: Stop Kurs unterhalb des aktuellen Kurswerts.</td>
+                                    <td>Verkaufen: Limit Kurs oberhalb des aktuellen Kurswerts.</td>
+                                </tr>
+                                <tr>
+                                    <td>Mit der Stop Order kannst du deine aktuelle Position absichern (Verkaufen) oder
+                                        in
+                                        Trendrichtung beim Überschreiten eines bestimmten Kurswertes aufbauen (Kaufen).
+                                    </td>
+                                    <td>Mit der Limit Order kannst du deine Gewinne in Trendrichtung mitnehmen
+                                        (Verkaufen)
+                                        oder deine Position in einer Korrektur aufbauen (Kaufen).</td>
+                                </tr>
+                                <tr>
+                                    <td>Slippagen zu deinem Nachteil treten oft auf.</td>
+                                    <td>Slippagen zu deinem Nachteil können niemals auftreten.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </diV>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // Code for TOC
+
+        var toc = document.querySelector('.toc');
+        var tocPath = document.querySelector('.toc-marker path');
+        var tocItems;
+
+        // Factor of screen size that the element must cross
+        // before it's considered visible
+        var TOP_MARGIN = 0.1,
+            BOTTOM_MARGIN = 0.2;
+
+        var pathLength;
+
+        var lastPathStart,
+            lastPathEnd;
+
+        window.addEventListener('resize', drawPath, false);
+        window.addEventListener('scroll', sync, false);
+
+        drawPath();
+
+        function drawPath() {
+
+            tocItems = [].slice.call(toc.querySelectorAll('li'));
+
+            // Cache element references and measurements
+            tocItems = tocItems.map(function (item) {
+                var anchor = item.querySelector('a');
+                var target = document.getElementById(anchor.getAttribute('href').slice(1));
+
+                return {
+                    listItem: item,
+                    anchor: anchor,
+                    target: target
+                };
+            });
+
+            // Remove missing targets
+            tocItems = tocItems.filter(function (item) {
+                return !!item.target;
+            });
+
+            var path = [];
+            var pathIndent;
+
+            tocItems.forEach(function (item, i) {
+
+                var x = item.anchor.offsetLeft - 5,
+                    y = item.anchor.offsetTop,
+                    height = item.anchor.offsetHeight;
+
+                if (i === 0) {
+                    path.push('M', x, y, 'L', x, y + height);
+                    item.pathStart = 0;
+                }
+                else {
+                    // Draw an additional line when there's a change in
+                    // indent levels
+                    if (pathIndent !== x) path.push('L', pathIndent, y);
+
+                    path.push('L', x, y);
+
+                    // Set the current path so that we can measure it
+                    tocPath.setAttribute('d', path.join(' '));
+                    item.pathStart = tocPath.getTotalLength() || 0;
+
+                    path.push('L', x, y + height);
+                }
+
+                pathIndent = x;
+
+                tocPath.setAttribute('d', path.join(' '));
+                item.pathEnd = tocPath.getTotalLength();
+
+            });
+
+            pathLength = tocPath.getTotalLength();
+
+            sync();
+
+        }
+
+        function sync() {
+
+            var windowHeight = window.innerHeight;
+
+            var pathStart = pathLength,
+                pathEnd = 0;
+
+            var visibleItems = 0;
+
+            tocItems.forEach(function (item) {
+
+                var targetBounds = item.target.getBoundingClientRect();
+
+                if (targetBounds.bottom > windowHeight * TOP_MARGIN && targetBounds.top < windowHeight * (1 - BOTTOM_MARGIN)) {
+                    pathStart = Math.min(item.pathStart, pathStart);
+                    pathEnd = Math.max(item.pathEnd, pathEnd);
+
+                    visibleItems += 1;
+
+                    item.listItem.classList.add('visible');
+                }
+                else {
+                    item.listItem.classList.remove('visible');
+                }
+
+            });
+
+            // Specify the visible path or hide the path altogether
+            // if there are no visible items
+            if (visibleItems > 0 && pathStart < pathEnd) {
+                if (pathStart !== lastPathStart || pathEnd !== lastPathEnd) {
+                    tocPath.setAttribute('stroke-dashoffset', '1');
+                    tocPath.setAttribute('stroke-dasharray', '1, ' + pathStart + ', ' + (pathEnd - pathStart) + ', ' + pathLength);
+                    tocPath.setAttribute('opacity', 1);
+                }
+            }
+            else {
+                tocPath.setAttribute('opacity', 0);
+            }
+
+            lastPathStart = pathStart;
+            lastPathEnd = pathEnd;
+
+        }
+
+        // Show TOC when scroll down
+        window.addEventListener("scroll", function () { showFunction() });
+
+        function showFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                document.getElementById("toc").style.display = "block";
+            } else {
+                document.getElementById("toc").style.display = "none";
+            }
+        }
+
+    </script>
+
+
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+        <section>
+            <h2 class="site-footer__heading">KW³ Solutions</h2>
+            <p class="site-footer__text--center">Dein Business. Deine Freiheit.</p>
+            <p class="site-footer__text--center">
+                <a class="site-footer__link--center" href="../../datenschutz">Datenschutz</a> |
+                <a class="site-footer__link--center" href="../../nutzungsbedingungen">Nutzungsbedingungen</a> |
+                <a class="site-footer__link--center" href="../../risikohinweis">Risikohinweis</a> |
+                <a class="site-footer__link--center" href="../../impressum">Impressum</a>
+            </p>
+            <p class="site-footer__text--center">Copyright © 2022 KW³ Business Ltd</p>
+        </section>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>

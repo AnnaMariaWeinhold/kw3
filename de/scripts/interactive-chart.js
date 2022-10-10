@@ -46,7 +46,7 @@ function debounce(delay = 500, handler) {
 window.addEventListener("DOMContentLoaded", async function () {
   const chart = echarts.init(document.getElementById("interactive-chart"));
 
-  const data = await fetch("/data/sp-basis.json").then((res) => res.json());
+  const data = await fetch("/de/data/sp-basis.json").then((res) => res.json());
 
   const dataDescription = data.shift();
   const dates = data.map((row) => row[0]);
