@@ -31,7 +31,6 @@
     <meta name="theme-color" content="#ffffff">
 
     <script src="../../scripts/echarts.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -82,7 +81,7 @@
         <div id="toc" class="toc">
             <h6>Inhaltsverzeichnis</h6>
             <ul class="toc__nav">
-                <li><a href="#Stop Order Intro" class="toc__link">Stop Ordertypen</a></li>
+                <li><a href="#point01" class="toc__link">1. Stop Ordertypen</a></li>
                 <li><a href="#point02" class="toc__link">2. Was ist eien Stop Order?</a></li>
                 <li><a href="#point03" class="toc__link">3. Was ist eine Stop Buy Order?</a></li>
                 <li><a href="#point04" class="toc__link">4. Was ist eine Stop Loss Order bzw. eine Stop Sell Order?</a>
@@ -116,12 +115,14 @@
                 <div class="animated_share">
                     <div class="animated_share_btn">
                         <a href="https://www.facebook.com/sharer/sharer.php?u=https://kw3.solutions/de/blog/geld/stop-order-stop-buy-order-stop-loss-einfach-erklaert"
-                            target="_blank"><i class="fa fa-facebook"></i></a>
+                            target="_blank"><img class="article__social-media-icon" src="images/icon-facebook.svg"
+                                width="20" height="" alt="Facebook Icon"></a>
                         <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fmasterblogging.com%2Fbest-travel-blogs%2F&media=https://kw3.solutions/de/blog/geld/stop-order-stop-buy-order-stop-loss-einfach-erklaert"
-                            target="_blank"><i class="fa fa-pinterest"></i></a>
-                        <a
-                            href="https://twitter.com/share?url=https://kw3.solutions/de/blog/geld/stop-order-stop-buy-order-stop-loss-einfach-erklaert"><i
-                                class="fa fa-twitter" target="_blank"></i></a>
+                            target="_blank"><img class="article__social-media-icon" src="images/icon-pinterest.svg"
+                                width="20" height="" alt="Pinterest Icon"></a>
+                        <a href="https://twitter.com/share?url=https://kw3.solutions/de/blog/geld/stop-order-stop-buy-order-stop-loss-einfach-erklaert"
+                            target="_blank"><img class="article__social-media-icon" src="images/icon-twitter.svg"
+                                width="20" height="" alt="Twitter Icon"></a>
                     </div>
                 </div>
             </div>
@@ -130,7 +131,7 @@
                 gut, wenn du eine Stop Order sicher anwenden könntest, oder?</p>
 
             <figure class="article__figure">
-                <img src="#" alt="#" width="730" height="">
+                <img src="images/image-article-stop-order.svg" alt="Stop Order als Grafik" width="730" height="">
             </figure>
 
 
@@ -138,7 +139,7 @@
             <!-- Hauptinhalt -->
 
             <section>
-                <h2 class="article__heading-two  visible" id="Stop Order Intro">Stop Ordertypen</h2>
+                <h2 class="article__heading-two  visible" id="point01">Stop Ordertypen</h2>
                 <p>Die Stop Order wird in Stop Buy Order und Stop Loss Order bzw. Stop Sell Order unterteilt. Je
                     nachdem, ob du kaufen oder verkaufen möchtest, wird die ein oder andere ausgeführt.
                 </p>
@@ -300,14 +301,14 @@
                         Danach wählst du den Ordertypen – beispielsweise die Stop Order – aus.</p>
                     <p>Bei den meisten Brokern gehst du folgendermaßen bei der Platzierung deiner Order vor:
                     </p>
-                    <ul class="article__list">
-                        <li>1. Du wählst ein Handelsprodukt, beispielsweise die Apple Aktie oder einen S&P 500 ETF, aus.
+                    <ol class="article__list">
+                        <li>Du wählst ein Handelsprodukt, beispielsweise die Apple Aktie oder einen S&P 500 ETF, aus.
                         </li>
-                        <li>2. Du gibst an, ob du kaufst oder verkaufst.</li>
-                        <li>3. Du wählst Stop Order als Ordertyp aus.</li>
-                        <li>4. Du legst Preis, Anzahl sowie Ordergültigkeit fest.</li>
-                        <li>5. Du klickst „Order platzieren“ bzw. „Order abschließen“.</li>
-                    </ul>
+                        <li>Du gibst an, ob du kaufst oder verkaufst.</li>
+                        <li>Du wählst Stop Order als Ordertyp aus.</li>
+                        <li>Du legst Preis, Anzahl sowie Ordergültigkeit fest.</li>
+                        <li>Du klickst „Order platzieren“ bzw. „Order abschließen“.</li>
+                    </ol>
                     <div class="article__box--info-item">
                         <h6 class="article__box--info">Wichtiger Hinweis</h6>
                     </div>
@@ -324,19 +325,27 @@
                             Stop Sell Order oder Stop Loss Order = Sell Stop Order
                         </p>
                     </div>
-                    <div class="quiz">
-                        <form class="quiz-step-option  quiz-step-option-cards">
-                            <label class="quiz-card">
-                                <input class="quiz-radio" type="radio" name="broker" value="Interactive Broker">
-                                <span class="quiz-card-text">Interactive Broker</span>
+
+
+
+
+
+                    <!-- NAVIGATION FOR SLIDER
+
+                    <div class="radio-navigation">
+                        <form class="radio-navigation__form">
+                            <label>
+                                <input class="radio-navigation__radio" type="radio" name="broker"
+                                    value="Interactive Broker">
+                                <button type="button" class="radio-navigation__button">Interactive Broker</span>
                             </label>
-                            <label class="quiz-card">
-                                <input class="quiz-radio" type="radio" name="broker" value="Robinhood">
-                                <span class="quiz-card-text">Robinhood</span>
+                            <label>
+                                <input class="radio-navigation__radio" type="radio" name="broker" value="Robinhood">
+                                <button type="button" class="radio-navigation__button">Robinhood</button>
                             </label>
-                            <label class="quiz-card">
-                                <input class="quiz-radio" type="radio" name="broker" value="Comdirect">
-                                <span class="quiz-card-text">Comdirect</span>
+                            <label>
+                                <input class="radio-navigation__radio" type="radio" name="broker" value="Comdirect">
+                                <button type="button" class="radio-navigation__button">Comdirect</button>
                             </label>
                         </form>
                     </div>
@@ -345,9 +354,7 @@
 
 
 
-
-
-                <!-- SLIDER MIT NAVIGATION -->
+                SLIDER NAVIGATION
 
                 <div class="container">
                     <ul class="slides">
@@ -372,58 +379,59 @@
                         </li>
                     </ul>
                 </div>
+            -->
 
 
 
 
 
-
-
-
-                <section>
-                    <h2 class="article__heading-three" id="point09">Unterschied Limit Order, Stop Order und Stop Limit
-                        Order</h2>
-                    <p>Stop Order und Limit Order sind zwei unterschiedliche Ordertypen. Stop Limit Order ist eine
-                        Kombination aus Stop Order und Limit Order und kann bei deinem Broker ebenfalls als Ordertyp
-                        ausgewählt werden.</p>
-                    <diV class="responsive table">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Stop Order</th>
-                                    <th>Limit Order</th>
-                                    <th>Stop Limit Order</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Ein Kurswert (Stop)</td>
-                                    <td>Ein Kurswert (Limit)</td>
-                                </tr>
-                                <tr>
-                                    <td>Kaufen: Stop Kurs oberhalb des aktuellen Kurswerts.</td>
-                                    <td>Kaufen: Limit Kurs unterhalb des aktuellen Kurswerts</td>
-                                </tr>
-                                <tr>
-                                    <td>Verkaufen: Stop Kurs unterhalb des aktuellen Kurswerts.</td>
-                                    <td>Verkaufen: Limit Kurs oberhalb des aktuellen Kurswerts.</td>
-                                </tr>
-                                <tr>
-                                    <td>Mit der Stop Order kannst du deine aktuelle Position absichern (Verkaufen) oder
-                                        in
-                                        Trendrichtung beim Überschreiten eines bestimmten Kurswertes aufbauen (Kaufen).
-                                    </td>
-                                    <td>Mit der Limit Order kannst du deine Gewinne in Trendrichtung mitnehmen
-                                        (Verkaufen)
-                                        oder deine Position in einer Korrektur aufbauen (Kaufen).</td>
-                                </tr>
-                                <tr>
-                                    <td>Slippagen zu deinem Nachteil treten oft auf.</td>
-                                    <td>Slippagen zu deinem Nachteil können niemals auftreten.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </diV>
+                    <section>
+                        <h2 class="article__heading-three" id="point09">Unterschied Limit Order, Stop Order und Stop
+                            Limit
+                            Order</h2>
+                        <p>Stop Order und Limit Order sind zwei unterschiedliche Ordertypen. Stop Limit Order ist eine
+                            Kombination aus Stop Order und Limit Order und kann bei deinem Broker ebenfalls als Ordertyp
+                            ausgewählt werden.</p>
+                        <diV class="responsive table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Stop Order</th>
+                                        <th>Limit Order</th>
+                                        <th>Stop Limit Order</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Ein Kurswert (Stop)</td>
+                                        <td>Ein Kurswert (Limit)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kaufen: Stop Kurs oberhalb des aktuellen Kurswerts.</td>
+                                        <td>Kaufen: Limit Kurs unterhalb des aktuellen Kurswerts</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Verkaufen: Stop Kurs unterhalb des aktuellen Kurswerts.</td>
+                                        <td>Verkaufen: Limit Kurs oberhalb des aktuellen Kurswerts.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mit der Stop Order kannst du deine aktuelle Position absichern (Verkaufen)
+                                            oder
+                                            in
+                                            Trendrichtung beim Überschreiten eines bestimmten Kurswertes aufbauen
+                                            (Kaufen).
+                                        </td>
+                                        <td>Mit der Limit Order kannst du deine Gewinne in Trendrichtung mitnehmen
+                                            (Verkaufen)
+                                            oder deine Position in einer Korrektur aufbauen (Kaufen).</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Slippagen zu deinem Nachteil treten oft auf.</td>
+                                        <td>Slippagen zu deinem Nachteil können niemals auftreten.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </diV>
         </div>
     </div>
 
